@@ -4,25 +4,33 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The New Academy — A Modern Classical Education</title>
-<meta name="description" content="The trivium and quadrivium rebuilt for modern life: grammar, logic, rhetoric, arithmetic, geometry, music, astronomy, philosophy, and physical training.">
+<meta name="description" content="The trivium and quadrivium rebuilt for modern life: grammar, logic, rhetoric, Latin, Greek, arithmetic, geometry, music, astronomy, philosophy, and physical training — with quizzes, flashcards, exams, and a library of primary sources.">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <nav class="topnav"><div class="inner">
   <a class="brand" href="index.html"><span>◈</span> The New Academy</a>
-  <div class="navlinks"><a href="index.html">Curriculum</a><a href="courses/philosophy.html">Philosophy</a></div>
+  <div class="navlinks"><a href="index.html">Courses</a><a href="review.html">Review</a><a href="library.html">Library</a><a href="timeline.html">Timeline</a></div>
 </div></nav>
 <div class="wrap">
 <header class="hero">
   <p class="kicker">Paideia · for the modern world</p>
   <h1>The New Academy</h1>
-  <p class="subtitle">The classical Greek and Roman curriculum — grammar, logic, rhetoric, arithmetic, geometry, music, astronomy, philosophy, and physical training — rebuilt as a self-paced course for a phone and a busy life.</p>
+  <p class="subtitle">The classical Greek and Roman curriculum rebuilt as a self-paced course for a phone and a busy life — now with quizzes in every lesson, flashcards, final exams, a library of primary sources, and your own notes.</p>
   <div class="meander"></div>
 </header>
 
-<h2>What this is</h2>
-<p>For roughly two thousand years, educated people in the West studied the same core: the <strong>trivium</strong> (the three arts of language and thought) and the <strong>quadrivium</strong> (the four arts of number and the cosmos), crowned by <strong>philosophy</strong> and grounded in <strong>physical training</strong>. It produced people who could read carefully, reason cleanly, speak persuasively, count honestly, and live deliberately.</p>
-<p>This site rebuilds that education lesson by lesson — no prior knowledge assumed, no Latin required on day one, every ancient idea paired with a modern use. Work the courses in order, or jump to whatever you need most.</p>
+<h2>Your academy</h2>
+<div class="dashgrid">
+  <div class="card dash"><div class="bignum" id="streak-num">0</div><div class="lbl">day streak</div></div>
+  <div class="card dash"><div class="bignum" id="overall-num">0</div><div class="lbl">lessons done</div></div>
+  <div class="card dash"><a class="btn" id="continue-btn" href="#" hidden>Continue</a><div class="lbl">pick up where you left off</div></div>
+</div>
+<div class="card">
+  <strong>Drill of the day</strong>
+  <p class="meta" style="margin:.2rem 0 .6rem">One question, fresh every day — drawn from what you've already studied.</p>
+  <div id="drill"></div>
+</div>
 
 <h2>The curriculum</h2>
 <p class="pct" id="overall-pct"></p>
@@ -31,7 +39,7 @@
 <div class="coursegrid">
 <a class="course" data-course="grammar" data-total="6" href="courses/grammar.html">
   <div class="cn">Trivium I</div><h3>Grammar</h3>
-  <p>Reading well: how language works, Latin and Greek roots, and a working primer in both ancient tongues.</p>
+  <p>Reading well: how language works, Latin and Greek roots, and the mechanics of clear sentences.</p>
   <div class="pbar"><i></i></div><div class="pct"></div></a>
 <a class="course" data-course="logic" data-total="6" href="courses/logic.html">
   <div class="cn">Trivium II</div><h3>Logic</h3>
@@ -40,6 +48,18 @@
 <a class="course" data-course="rhetoric" data-total="7" href="courses/rhetoric.html">
   <div class="cn">Trivium III</div><h3>Rhetoric</h3>
   <p>Speaking well: the five canons, speech structure, style, and memory techniques that still work.</p>
+  <div class="pbar"><i></i></div><div class="pct"></div></a>
+</div>
+
+<h3>The Tongues — Latin and Greek</h3>
+<div class="coursegrid">
+<a class="course" data-course="latin" data-total="6" href="courses/latin.html">
+  <div class="cn">Tongues I</div><h3>Latin I</h3>
+  <p>Read the language of Rome: pronunciation, declensions, verbs, and real inscriptions.</p>
+  <div class="pbar"><i></i></div><div class="pct"></div></a>
+<a class="course" data-course="greek" data-total="6" href="courses/greek.html">
+  <div class="cn">Tongues II</div><h3>Greek I</h3>
+  <p>The alphabet, breathings, core grammar, and your first lines of real Greek.</p>
   <div class="pbar"><i></i></div><div class="pct"></div></a>
 </div>
 
@@ -75,22 +95,32 @@
   <div class="pbar"><i></i></div><div class="pct"></div></a>
 </div>
 
+<h2>Study tools</h2>
+<div class="toolgrid">
+<a class="course" href="review.html"><div class="cn">Tool</div><h3>Review room</h3><p>Flashcard decks for every course, a 10-question mixed drill, and all your lesson notes in one place.</p></a>
+<a class="course" href="library.html"><div class="cn">Tool</div><h3>The Library</h3><p>Read the ancients themselves: ten primary sources with context, key ideas, and famous passages.</p></a>
+<a class="course" href="timeline.html"><div class="cn">Tool</div><h3>Timeline</h3><p>Twelve centuries of the classical world, from the first Olympics to the closing of the Academy.</p></a>
+<a class="course" href="search.html"><div class="cn">Tool</div><h3>Search</h3><p>Find any concept, term, or name across all <span class="total-lessons">67</span> lessons.</p></a>
+</div>
+
 <h2>How to study</h2>
 <div class="card">
 <p>The ancients didn't binge. They wove study into the day. Borrow their rhythm:</p>
 <ul>
 <li><strong>Morning (15–20 min):</strong> read one lesson. Read it twice — once for the shape, once for the detail.</li>
-<li><strong>Midday (10 min):</strong> do the lesson's <em>Try</em> exercise. Application is the whole point.</li>
-<li><strong>Evening (5 min):</strong> answer the <em>Check</em> question from memory, then look. Mark the lesson done.</li>
+<li><strong>Midday (10 min):</strong> do the lesson's <em>Try</em> exercise, then take its <strong>quiz</strong>. Application is the whole point.</li>
+<li><strong>Evening (5 min):</strong> answer the <em>Check</em> question from memory, flip a few <strong>flashcards</strong> in the Review room, mark the lesson done.</li>
+<li><strong>Each course's end:</strong> sit the <strong>final exam</strong> — 10 questions, 7 to pass. Then read the source texts in the Library that the course points to.</li>
 </ul>
-<p>One lesson a day finishes the entire academy — 54 lessons — in under two months. Your progress is saved on this device automatically; nothing leaves your phone.</p>
+<p>One lesson a day finishes the entire academy — <span class="total-lessons">67</span> lessons — in just over two months. Your progress, quiz scores, notes, and streak are saved on this device automatically; nothing leaves your phone.</p>
 </div>
 
 <h2>Why this order</h2>
-<p><strong>Grammar before logic:</strong> you can't evaluate an argument you can't parse. <strong>Logic before rhetoric:</strong> persuasion without reasoning is manipulation. <strong>The quadrivium after the trivium:</strong> number needs a trained mind to mean anything. <strong>Philosophy last:</strong> ethics lands harder once you can read, reason, speak, and count. <strong>Gymnastics throughout:</strong> the Greeks trained the body alongside the mind from day one — don't save it for the end.</p>
+<p><strong>Grammar before logic:</strong> you can't evaluate an argument you can't parse. <strong>Logic before rhetoric:</strong> persuasion without reasoning is manipulation. <strong>The tongues alongside:</strong> Latin and Greek unlock the sources themselves — start them whenever curiosity strikes. <strong>The quadrivium after the trivium:</strong> number needs a trained mind to mean anything. <strong>Philosophy last:</strong> ethics lands harder once you can read, reason, speak, and count. <strong>Gymnastics throughout:</strong> the Greeks trained the body alongside the mind from day one — don't save it for the end.</p>
 
 <footer class="foot"><p>The New Academy · a modern <em>paideia</em> · prepared 2026. Progress is stored only in this browser.</p></footer>
 </div>
+<script src="js/data.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
