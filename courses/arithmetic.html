@@ -18,33 +18,142 @@
 
 <div class="lesson" data-course="arithmetic"><div class="lesson-head"><div class="lesson-num">1</div><h3>How big is that, really?</h3><div class="lesson-toggle">▾</div></div>
 <div class="lesson-body">
+<h4>Objectives</h4>
+<ul>
+<li>Break any big unknown into a chain of small, guessable quantities and multiply them.</li>
+<li>Think in orders of magnitude — powers of ten — and convert abstract counts into scales your body can feel.</li>
+<li>Carry a pocketful of estimation anchors: people, miles, dollars, seconds.</li>
+<li>Spot when a number was engineered to impress rather than inform.</li>
+</ul>
+<h4>The Fermi method: guess in pieces</h4>
 <p>The most useful arithmetic skill is not calculation — it is <strong>estimation</strong>. The physicist Enrico Fermi used to ask his students questions like "how many piano tuners are in Chicago?" and get answers within a factor of two, with no data at all. The method: break the unknown into pieces you <em>can</em> guess, multiply, and don't sweat precision. These are called <strong>Fermi problems</strong>, and they are how engineers, investors, and generals sanity-check claims before the spreadsheets arrive.</p>
+<p>Watch it run on Fermi's own example. Chicago holds about 2.7 million people — call it 3 million. The average household is about 2.5 people, so roughly 1.2 million households. Guess that 1 household in 20 owns a piano: that's 60,000 pianos. Pianos get tuned about once a year, and a tuner manages about 2 tunings a day, 250 days a year — 500 tunings a year. 60,000 ÷ 500 = <strong>120 tuners</strong>. The real answer is around 100–200. Every single guess was crude, and the answer is still right — because errors in the pieces partly cancel, and what matters is the order of magnitude, not the digits. A chain of four rough guesses beats one confident guess every time.</p>
+<p>The rules of the game: keep chains short (four to six links), bracket your shakiest link — "between 1 in 10 and 1 in 50" — and never let a guess pretend to be data. The chain is only as strong as its weakest link, so if one link dominates the uncertainty, spend your effort there.</p>
+<h4>Orders of magnitude: the feel of scale</h4>
 <p>Think in <strong>orders of magnitude</strong> — powers of ten. A thousand and a million are not "both big"; a million seconds is 11 days, a billion seconds is 32 years. Most people who are fooled by numbers are fooled because they never converted to a scale their brain can feel. The ancient habit: <em>count what can be counted, and distrust what arrives pre-counted by someone selling something.</em></p>
-<div class="try"><strong>Try</strong><br>Estimate how many gallons of gasoline your town burns per day. Start from pieces: population → households with cars → miles per car per day → gallons per mile. Compare your answer to a friend's estimate — you'll likely land within a factor of two of each other, which is the whole point.</div>
+<table>
+<tr><th>Size</th><th>That's…</th><th>In seconds</th></tr>
+<tr><td>1 thousand</td><td>a small crowd</td><td>≈ 17 minutes</td></tr>
+<tr><td>1 million</td><td>a stadium, full, ten times over</td><td>≈ 11.6 days</td></tr>
+<tr><td>1 billion</td><td>a million thousands</td><td>≈ 31.7 years</td></tr>
+<tr><td>1 trillion</td><td>a thousand billions</td><td>≈ 31,700 years</td></tr>
+</table>
+<p>Money works the same trick. A million dollars in $100 bills is a stack you can hold in one hand — about 43 inches of paper, under four feet. A billion dollars in $100 bills is a stack about 3,600 feet tall, higher than the Burj Khalifa. "Million" and "billion" sound like neighbors; in reality a billion is a <em>thousand</em> millions. Every time a headline says "billions," picture the stack.</p>
+<h4>A pocketful of anchors</h4>
+<p>Estimation is fast only if you carry anchors — everyday quantities you know cold and can scale from:</p>
+<table>
+<tr><th>Anchor</th><th>Value</th></tr>
+<tr><td>A person</td><td>~5'6", ~150 lb</td></tr>
+<tr><td>Walking speed</td><td>~3 mph (a 20-minute mile)</td></tr>
+<tr><td>US household</td><td>~2.5 people</td></tr>
+<tr><td>A car</td><td>~25 mpg, ~12,000 miles/year</td></tr>
+<tr><td>A work year</td><td>~2,000 hours</td></tr>
+<tr><td>A large pizza</td><td>14 inches, feeds ~3</td></tr>
+<tr><td>A gallon of gas</td><td>~$3.50, weighs ~6 lb</td></tr>
+</table>
+<p>Now spend the anchors. How much gasoline does a town of 50,000 burn per day? 50,000 people ≈ 20,000 households. Say 4 in 5 households have a car: 16,000 cars. Each drives about 30 miles a day → 480,000 miles. At 25 mpg that's 19,200 gallons — call it <strong>~20,000 gallons a day</strong>. Now wobble every guess by half and you're still between 5,000 and 80,000 — the right neighborhood, which is the whole point. Nobody needs the exact number to know whether the town needs one gas station or fifty.</p>
+<p><em>"There are some, King Gelon, who think that the number of the sand is infinite in multitude; and I mean by the sand not only that which exists about Syracuse and the rest of Sicily but also that which is found in every region whether inhabited or uninhabited."</em> — Archimedes, <strong>The Sand-Reckoner</strong> (c. 212 BC). Archimedes went on to invent a number system big enough to count the grains of sand that would fill the universe — the first great Fermi estimate in history, done to prove that no quantity, however vast, is beyond reckoning.</p>
+<div class="try"><strong>Try</strong><br><ol>
+<li>Estimate how many gallons of gasoline your town burns per day. Start from pieces: population → households with cars → miles per car per day → gallons per mile. Compare your answer to a friend's estimate — you'll likely land within a factor of two of each other, which is the whole point.</li>
+<li>How many times has your heart beaten in your life so far? Anchor: ~70 beats per minute. Show the chain.</li>
+<li>How many school buses would it take to carry everyone in your state? (Anchor: a bus holds ~50 people.)</li>
+<li>Estimate the number of bricks in a typical single-family house. Start from the wall: how many bricks per square foot?</li>
+</ol></div>
 <div class="check"><strong>Check</strong><br>Why is an estimate that's "within a factor of two" still useful?<br><button>Show answer</button><div class="answer">Because most bad decisions come from being wrong by a factor of a hundred or a thousand, not a factor of two. An estimate puts you in the right neighborhood — close enough to spot nonsense and plan sensibly.</div></div>
+<div class="check"><strong>Check</strong><br>A politician says a program's budget "doubled." What's your first arithmetic move?<br><button>Show answer</button><div class="answer">Find the base amount. Doubling $1 million is a rounding error; doubling $1 billion is news. "Doubled" is a ratio wearing a costume — the absolute number is what your taxes feel.</div></div>
+<div class="check"><strong>Check</strong><br>Your Fermi chain has five guessed links. Which one should you spend effort improving?<br><button>Show answer</button><div class="answer">The least certain one. The chain is only as good as its shakiest guess, so bracket that link — "between 1 in 10 and 1 in 50" — and see how much the answer swings. Improving a link you're already sure about buys almost nothing.</div></div>
+<h4>Summary</h4>
+<p>Estimation is structured guessing: chain small anchors, multiply, and land within a factor of two. Orders of magnitude are the native language of big numbers — a billion is a thousand millions, and a million seconds is eleven days while a billion is thirty-two years. Carry anchors, bracket your weakest link, and you'll be immune to the most common numerical con there is: the big number with no scale.</p>
 <label class="markdone"><input type="checkbox" data-lesson="arithmetic:1"> Mark lesson complete</label>
 </div></div>
 
 <div class="lesson" data-course="arithmetic"><div class="lesson-head"><div class="lesson-num">2</div><h3>Ratios, proportions, percentages</h3><div class="lesson-toggle">▾</div></div>
 <div class="lesson-body">
+<h4>Objectives</h4>
+<ul>
+<li>Ask "percent of <em>what</em>?" before reacting to any percentage.</li>
+<li>Convert fluently among fractions, decimals, and percents.</li>
+<li>Handle successive percent changes by multiplying — never by adding.</li>
+<li>Price anything by the unit, and scale recipes and comparisons by ratio.</li>
+</ul>
+<h4>Percent of what?</h4>
 <p>Percentages are the native language of modern deception, and the defense is one question: <strong>percent of <em>what</em>?</strong> "Prices rose 50%!" — of what base? "Risk doubled!" — from 1 in a million to 2 in a million? A percentage without its base is a story without a setting.</p>
+<p>Two related traps. <strong>Percentage points vs. percent:</strong> a tax rising from 5% to 8% is "up 3 percentage points" — or, equivalently, "up 60%." Both are true; the scarier one is the one you usually hear. When the change is small, the relative percent is always the scarier number, which is exactly why it's chosen. <strong>The hidden denominator:</strong> "crime doubled in this neighborhood" means nothing until you know it went from 1 incident to 2. Always demand the base, the absolute count, and the timeframe — the three things a manipulative percentage is designed to make you forget.</p>
+<h4>Changes multiply, they never add</h4>
 <p>Two everyday tools. <strong>Unit pricing:</strong> always divide price by quantity — the "big deal" package is often the expensive one. <strong>Successive changes multiply, they don't add:</strong> a 50% discount followed by a 50% markup does not return you to the start. Start at $100 → 50% off → $50 → 50% more → $75. The order doesn't matter; multiplication is multiplication. Merchants have exploited this asymmetry for centuries.</p>
-<div class="try"><strong>Try</strong><br>Something costs $80. It's marked 50% off, then the store adds 50% back "for restocking." What's the final price — and how much did the store just make on the round trip? Prove it with the multiplication, not the intuition.</div>
+<p>The clean version: a 20% rise followed by a 20% fall is <em>not</em> break-even. $100 + 20% = $120; −20% of $120 = $96. You lost $4, because the second percentage was taken from a bigger base. In general, (1 + r)(1 − r) = 1 − r² — a rise and fall of r% always costs you r². For r = 20%, that's 4%. For r = 50%, it's 25%, which is why $100 → $50 → $75. And the reverse order gives the same result: −20% then +20% is (0.8)(1.2) = 0.96. Multiplication doesn't care about order, and neither should your wallet.</p>
+<h4>Ratios, proportions, and the unit price</h4>
+<p>A ratio is just a comparison wearing its work clothes. Learn the fraction–decimal–percent conversions cold, because every discount tag, interest rate, and tax table speaks them:</p>
+<table>
+<tr><th>Fraction</th><th>Decimal</th><th>Percent</th></tr>
+<tr><td>1/2</td><td>0.5</td><td>50%</td></tr>
+<tr><td>1/3</td><td>0.333…</td><td>33.3%</td></tr>
+<tr><td>2/3</td><td>0.667</td><td>66.7%</td></tr>
+<tr><td>1/4</td><td>0.25</td><td>25%</td></tr>
+<tr><td>3/4</td><td>0.75</td><td>75%</td></tr>
+<tr><td>1/5</td><td>0.2</td><td>20%</td></tr>
+<tr><td>1/8</td><td>0.125</td><td>12.5%</td></tr>
+<tr><td>1/10</td><td>0.1</td><td>10%</td></tr>
+</table>
+<p><strong>Unit pricing in action:</strong> cereal, 18 oz at $4.50 vs. 24 oz at $5.76. $4.50 ÷ 18 = $0.25/oz; $5.76 ÷ 24 = $0.24/oz. The bigger box wins despite the higher sticker — one cent an ounce, twenty-four cents on the box. <strong>Proportions</strong> are the same move on recipes and comparisons: a recipe serving 4 needs scaling to 6 — multiply everything by 6/4 = 1.5. Two jobs offer $21/hr for 30 hours vs. $19/hr for 40 hours: compare $630/week to $760/week, not the hourly rates alone.</p>
+<p><em>"Correct method of reckoning, for grasping the meaning of things and knowing everything that is, obscurities and all secrets."</em> — the <strong>Rhind Mathematical Papyrus</strong>, Egypt, c. 1550 BC. Egyptian scribes did all their fraction work with unit fractions — they wrote 3/4 as 1/2 + 1/4, because to them a fraction <em>was</em> a ratio to one. Clumsy, but it built the pyramids' supply ledgers — and it shows that fractions are older than the percent sign by three thousand years.</p>
+<div class="try"><strong>Try</strong><br><ol>
+<li>Something costs $80. It's marked 50% off, then the store adds 50% back "for restocking." What's the final price — and how much did the store just make on the round trip? Prove it with the multiplication, not the intuition.</li>
+<li>A $45 shirt is 30% off, then 6% sales tax applies to the discounted price. What's the final price? (Work it as $45 × 0.70 × 1.06.)</li>
+<li>Better buy: 12 oz of coffee at $8.40, or 16 oz at $10.88? Compute both unit prices.</li>
+<li>A $60,000 salary rises 10%, then falls 10%. Where does it land — and how much did the round trip cost?</li>
+</ol></div>
 <div class="check"><strong>Check</strong><br>A headline says "unemployment fell 20%." What do you need to know before reacting?<br><button>Show answer</button><div class="answer">The base: 20% of what rate? Falling from 10% to 8% is 20% — but so is falling from 5% to 4%, a very different story. You also need the absolute change and the timeframe.</div></div>
+<div class="check"><strong>Check</strong><br>A store advertises "70% off, then take an EXTRA 20% off!" Is that 90% off?<br><button>Show answer</button><div class="answer">No. Changes multiply: 0.30 × 0.80 = 0.24, so you pay 24% of the original — a 76% discount, not 90%. Adding percentages is the oldest trick in retail.</div></div>
+<div class="check"><strong>Check</strong><br>Your pay goes from $20/hr to $22/hr. A headline calls it "a 10% raise"; a coworker says "that's just two bucks." Who's right?<br><button>Show answer</button><div class="answer">Both — 10% relative, $2 absolute. Which one matters depends on the question: comparing offers, use the percent; budgeting your rent, use the dollars. A number that only gives you one is hiding the other.</div></div>
+<h4>Summary</h4>
+<p>Every percentage is a fraction with a hidden denominator — demand the base, the absolute count, and the timeframe before reacting. Successive percent changes multiply: a rise and fall of r% always costs r². Convert fractions, decimals, and percents fluently, price everything by the unit, and scale by ratio. The person who divides price by quantity at the shelf is doing the same mathematics the Egyptians used to stock a pyramid workforce.</p>
 <label class="markdone"><input type="checkbox" data-lesson="arithmetic:2"> Mark lesson complete</label>
 </div></div>
 
 <div class="lesson" data-course="arithmetic"><div class="lesson-head"><div class="lesson-num">3</div><h3>Mental math that actually works</h3><div class="lesson-toggle">▾</div></div>
 <div class="lesson-body">
+<h4>Objectives</h4>
+<ul>
+<li>Split multiplications into easy pieces: 8 × 47 = (8 × 40) + (8 × 7).</li>
+<li>Round and adjust: compute with friendly numbers, then fix the difference.</li>
+<li>Build any common percent from 10% — and 5%, 15%, 20% with it.</li>
+<li>Add and subtract left to right, keeping only a few chunks in working memory.</li>
+</ul>
+<h4>Split it</h4>
 <p>The Greeks did serious mathematics without a single written numeral for zero — mental manipulation was the whole game. Three tricks cover 90% of daily life. <strong>Split numbers:</strong> 8 × 47 = (8 × 40) + (8 × 7) = 320 + 56 = 376. <strong>Round and adjust:</strong> 47.60 × 0.15 for a tip? Think 10% ($4.76) + half of that for 5% ($2.38) = $7.14. <strong>The 10% trick:</strong> move the decimal one place — 10% of anything is instant, and 5%, 15%, 20% are all built from it.</p>
+<p>Splitting is just the distributive law doing manual labor. More examples: 23 × 15 = (20 × 15) + (3 × 15) = 300 + 45 = 345. And 7 × 13 × 2: do the easy pair first — 13 × 2 = 26, then 7 × 26 = 182 (or 7 × 13 = 91, doubled = 182; same answer, pick the order your brain likes). The principle: never multiply two awkward numbers if you can turn one of them friendly.</p>
+<h4>Round and adjust</h4>
+<p>When a number is <em>near</em> a friendly one, use the friendly one and correct. 9 × 17 = (10 × 17) − 17 = 170 − 17 = 153. 38 × 52 = (40 × 52) − (2 × 52) = 2,080 − 104 = 1,976. Sale math is the same move: 20% off $65. Ten percent is $6.50, double it for 20% = $13 off, so $65 − $13 = <strong>$52</strong>. Addition works left to right: 487 + 356 = (400 + 300) + (80 + 50) + (7 + 6) = 700 + 130 + 13 = 843 — hundreds first, because that's the part that matters most if you get interrupted.</p>
+<h4>Build everything from 10%</h4>
+<p>Ten percent of anything is one decimal shift: 10% of $62 is $6.20. From there: 5% is half of 10% ($3.10), 15% is 10% + 5% ($9.30), 20% is double 10% ($12.40), and 1% is two decimal shifts ($0.62). So an 18% tip on $62: 15% is $9.30, plus 3% ($1.86) = <strong>$11.16</strong>. Two multiplications you can do while the server is still at the table.</p>
+<p>Two more power moves. <strong>Halve and double:</strong> 16 × 25 looks hard; halve 16 to 8 and double 25 to 50, and 8 × 50 = 400. 35 × 18 → 70 × 9 = 630. <strong>Percent-of swaps:</strong> 18% of 50 is awkward, but 50% of 18 is 9 — x% of y always equals y% of x, so flip whichever side is friendlier.</p>
 <p>The deeper point isn't speed; it's <strong>independence</strong>. Every number you can check in your head is a number nobody can lie to you about — at the register, in a contract, on a pay stub. The calculator is a tool; the estimate in your head is the audit.</p>
-<div class="try"><strong>Try</strong><br>All mental, no paper: a 15% tip on $47.60; 8 × 47; 20% off $65; and 7 × 13 × 2. Say each answer out loud before checking with a calculator. Speed comes later — accuracy first.</div>
+<p>The <strong>Ishango bone</strong>, some 20,000 years old, carries grouped notches that archaeologists read as tally marks — arithmetic is older than writing. And <strong>Plimpton 322</strong>, a Babylonian clay tablet from about 1800 BC, lists fifteen Pythagorean triples computed in base 60, <em>without a zero</em> — scribes who had never seen a decimal point did harder mental arithmetic than most modern college students. The machinery is ancient; you're just learning to drive it.</p>
+<div class="try"><strong>Try</strong><br><ol>
+<li>All mental, no paper: a 15% tip on $47.60; 8 × 47; 20% off $65; and 7 × 13 × 2. Say each answer out loud before checking with a calculator. Speed comes later — accuracy first.</li>
+<li>25 × 36. (Hint: 25 × 4 = 100, and 36 = 4 × 9 — or halve-and-double to 50 × 18.)</li>
+<li>An 18% tip on a $62 bill, built from 10% and 5% and 3%.</li>
+<li>130 × 14, split as (100 × 14) + (30 × 14).</li>
+</ol></div>
 <div class="check"><strong>Check</strong><br>Why compute 8 × 47 as (8 × 40) + (8 × 7) instead of grinding through it?<br><button>Show answer</button><div class="answer">Because working memory holds about 4 chunks, not long digit strings. Splitting turns one hard problem into two easy ones (40s and 7s) plus one addition — each small enough to hold in your head without dropping anything.</div></div>
+<div class="check"><strong>Check</strong><br>Compute 6 × 24 two different ways, and name each method.<br><button>Show answer</button><div class="answer">Split: (6 × 20) + (6 × 4) = 120 + 24 = 144. Halve-and-double: 6 × 24 = 3 × 48 = 144. Both beat column multiplication in your head — and having two routes means you can cross-check.</div></div>
+<div class="check"><strong>Check</strong><br>The register says $212.73 for a cart you estimated at ~$150. What's your first move?<br><button>Show answer</button><div class="answer">Trust the estimate, not the machine. Your mental audit says something is off — recount mentally, scan for a double-scanned item or a wrong price. Keystroke errors and mislabeled shelves are common; your head is the backup system.</div></div>
+<h4>Summary</h4>
+<p>Mental math is three moves: split numbers into friendly pieces, round and adjust, and build every percent from 10%. Halve-and-double and percent-swaps handle the rest. The goal was never speed — it's independence: every total you can verify in your head is a total nobody can inflate against you. The Babylonians did harder arithmetic in base 60 with no zero; you can handle the tip.</p>
 <label class="markdone"><input type="checkbox" data-lesson="arithmetic:3"> Mark lesson complete</label>
 </div></div>
 
 <div class="lesson" data-course="arithmetic"><div class="lesson-head"><div class="lesson-num">4</div><h3>Proof: why the primes never end</h3><div class="lesson-toggle">▾</div></div>
 <div class="lesson-body">
+<h4>Objectives</h4>
+<ul>
+<li>Follow Euclid's proof that the primes are infinite, line by line.</li>
+<li>State the fine print correctly: the proof finds new prime <em>factors</em>, not new primes directly.</li>
+<li>Use proof by contradiction as a general reasoning move.</li>
+<li>Distinguish proof — true forever — from even the most convincing evidence.</li>
+</ul>
+<h4>The proof, slowly</h4>
 <p>A <strong>proof</strong> is an argument that settles a question <em>forever</em> — not by evidence or authority, but by pure reasoning. Around 300 BC, Euclid proved there are infinitely many prime numbers, and his proof still works today, unchanged, because it doesn't depend on any fact about the world. Here it is, step by step:</p>
 <ol>
 <li>Suppose, for contradiction, that there are only finitely many primes. List them all: p₁, p₂, …, pₙ.</li>
@@ -54,28 +163,90 @@
 <li>Therefore the list can never be complete. The primes never end.</li>
 </ol>
 <p>Notice the move: <strong>assume the opposite, build something from that assumption, and watch it explode.</strong> That move — proof by contradiction — powers half of mathematics and a good share of philosophy.</p>
-<div class="try"><strong>Try</strong><br>Prove that the sum of two odd numbers is even. (Hint: write an odd number as 2k+1 for some whole number k, then add two of them and look at the form of the result.)</div>
+<h4>The fine print that makes it sharper</h4>
+<p>The proof does <em>not</em> claim that N itself is prime — only that N's prime factors are new. Watch: primes 2, 3, 5 give N = 31, which is prime. Primes 2, 3, 5, 7 give N = 211, prime again. But 2, 3, 5, 7, 11, 13 give N = 30,031 — and 30,031 = 59 × 509, composite. Did the proof break? No: 59 and 509 are primes not on our list, which is all the proof ever promised. <strong>New prime factors, not a new prime.</strong> Most "refutations" of this proof you'll meet online die right here, on a claim Euclid never made.</p>
+<p>One more sharpening: Euclid's proof works on <em>any</em> finite list of primes, not just "all the ones we know." Hand it any candidate complete list and it manufactures a prime outside it. That's why the contradiction bites every time — there is no finite list that survives, so no finite list can be complete.</p>
+<h4>Contradiction as a weapon</h4>
+<p>The same move settles other questions. Is √2 irrational — impossible to write as a fraction? Suppose it <em>is</em> a fraction p/q in lowest terms. Then 2q² = p², so p² is even, so p is even: p = 2k. Then 2q² = 4k², so q² = 2k², so q is even too. But p/q was in lowest terms — both even is a contradiction. Therefore no such fraction exists, and √2 is irrational, forever, with no computer needed. Once you own this pattern, you'll spot it in philosophy ("suppose justice <em>is</em> just the advantage of the stronger…") and in everyday arguments ("suppose the policy worked — then we'd expect…"). Assume, build, detonate.</p>
+<p><em>"Prime numbers are more than any assigned multitude of prime numbers."</em> — Euclid, <strong>Elements</strong>, Book IX, Proposition 20 (c. 300 BC, Alexandria). Thirteen books, built from a handful of definitions and postulates; this proof runs a few lines and has never needed a patch in twenty-three centuries. That is what proof buys you: conclusions that outlive every empire.</p>
+<div class="try"><strong>Try</strong><br><ol>
+<li>Prove that the sum of two odd numbers is even. (Hint: write an odd number as 2k+1 for some whole number k, then add two of them and look at the form of the result.)</li>
+<li>Prove that the product of two even numbers is even. (Write each even number as 2 times something.)</li>
+<li>Take the primes 2, 3, 5, 7, 11. Compute N = (2×3×5×7×11) + 1 = 2311, and verify that none of 2, 3, 5, 7, 11 divides it. (2311 turns out to be prime — but the proof would work either way. Why?)</li>
+</ol></div>
 <div class="check"><strong>Check</strong><br>What makes a proof different from a very convincing argument?<br><button>Show answer</button><div class="answer">A proof leaves no loophole <em>in principle</em> — its conclusion follows necessarily from its premises, so no future evidence can overturn it. A convincing argument (even a scientific one) is always hostage to new data.</div></div>
+<div class="check"><strong>Check</strong><br>N comes out composite — 30,031 = 59 × 509. Does Euclid's proof fail?<br><button>Show answer</button><div class="answer">No. The proof never claims N is prime; it claims N has a prime factor outside your list, and 59 and 509 qualify. Attacking the proof for not producing a prime is attacking a claim it never made.</div></div>
+<div class="check"><strong>Check</strong><br>Why can this proof never "run out" of new primes?<br><button>Show answer</button><div class="answer">Because it applies to <em>any</em> finite list of primes. Every candidate complete list self-destructs the same way, so no finite list can ever be the whole story.</div></div>
+<h4>Summary</h4>
+<p>Euclid's proof assumes finitely many primes, builds N = (product) + 1, and finds a prime factor outside the list — contradiction, so the primes are infinite. The fine print matters: it guarantees new prime <em>factors</em>, never that N itself is prime. Proof by contradiction — assume the opposite, build, detonate — is a portable weapon, and unlike evidence, a proof's conclusion holds forever.</p>
 <label class="markdone"><input type="checkbox" data-lesson="arithmetic:4"> Mark lesson complete</label>
 </div></div>
 
 <div class="lesson" data-course="arithmetic"><div class="lesson-head"><div class="lesson-num">5</div><h3>Statistics literacy</h3><div class="lesson-toggle">▾</div></div>
 <div class="lesson-body">
+<h4>Objectives</h4>
+<ul>
+<li>Choose the right average for the question — mean for totals, median for the typical case.</li>
+<li>Run base-rate arithmetic: a "99% accurate" test on a rare condition is mostly false positives.</li>
+<li>Name the three classic manipulations: cherry-picked windows, correlation-as-cause, survivorship bias.</li>
+<li>Interrogate any statistic with four questions: compared to what, measured how, over which period, who benefits?</li>
+</ul>
+<h4>Which average?</h4>
 <p>The ancients distrusted rhetoric; the modern equivalent is distrusting <strong>statistics presented without context</strong>. Three defenses cover most cases. <strong>Mean vs. median:</strong> the mean is dragged by outliers — a town where nine people earn $30k and one earns $3M has a <em>mean</em> income of $327k and a <em>median</em> of $30k. Whenever someone quotes an average about money, ask which average. <strong>Base rates:</strong> "the test is 99% accurate" means little without the base rate of the condition — a rare disease makes most positives false positives. <strong>Cherry-picked windows:</strong> any trend can be manufactured by choosing the start date.</p>
+<p>The rule of thumb: use the <strong>median</strong> for "what's typical?" (wages, house prices, test scores) and the <strong>mean</strong> for totals that must add up (per-capita tax revenue, average cost per unit). A town quoting its $327k "average income" to attract businesses is using a true number to tell a false story — the median resident earns $30k, and the median is the resident you'll actually meet.</p>
+<h4>Base rates: the 99% accurate test</h4>
+<p>Run the arithmetic yourself. A town of 10,000; a disease strikes 0.1% of people — 10 sick, 9,990 healthy. The test is 99% accurate both ways: it catches 99% of the sick (about 10 true positives) and clears 99% of the healthy, which means it falsely flags 1% of 9,990 ≈ <strong>100 false positives</strong>. Total positives: ~110. True positives: ~10. So a positive result means roughly a <strong>9% chance</strong> you're actually sick — 10 out of 110. Nine times out of ten, the positive is wrong, not because the test is bad but because the disease is rare. This is the <strong>base-rate fallacy</strong>, and it governs every screening test, every "AI detector," every fraud alert you'll ever meet: rare condition + good test = mostly false alarms.</p>
+<h4>Correlation is not causation</h4>
+<p>Ice cream sales and drowning deaths rise together every summer — not because one causes the other, but because heat drives both. The famous modern demo: countries that eat more chocolate win more Nobel Prizes (a real 2012 paper, written half as a joke). The third variable is national wealth, which buys both chocolate and research labs. Whenever someone shows you a correlation, your job is one question: <strong>what third thing could drive both?</strong> If you can't rule it out, the correlation is entertainment, not evidence.</p>
+<h4>Survivors don't tell the whole story</h4>
+<p>In WWII, statistician Abraham Wald studied bullet holes on returning bombers — and recommended armoring the spots with <em>no</em> holes. The planes hit there never came home; the data was a census of survivors. <strong>Survivorship bias</strong> is everywhere: the mutual fund ad boasting "our top fund beat the market 10 years running" never mentions the twenty funds the company launched and quietly closed. Business advice from billionaires samples only the winners of a brutal lottery. Always ask: <em>who's missing from this dataset, and would they change the story?</em></p>
+<p>A close cousin, stated carefully: the <strong>prosecutor's fallacy</strong>. A DNA match with a 1-in-a-million random-match probability does <em>not</em> mean a 1-in-a-million chance the suspect is innocent. It means: <em>if</em> innocent, a 1-in-a-million chance of matching by coincidence. In a city of 8 million, you'd expect about 8 innocent matches. The fallacy swaps P(match | innocent) for P(innocent | match) — and the second one also depends on the base rate of guilt, which the match statistic never mentions.</p>
+<h4>Cherry-picked windows</h4>
+<p>"Stocks up 60% since March!" — since March was the crash bottom, perhaps. Any trend can be manufactured by choosing the start date, which is why honest charts show the longest window available and dishonest ones start at the most flattering point. When you see a trend, mentally drag the start date backward and ask whether the story survives.</p>
 <p>The master question for any statistic: <em>compared to what, measured how, over which period, and who benefits from me believing it?</em> Four questions, and most statistical manipulation fails at least one.</p>
-<div class="try"><strong>Try</strong><br>Explain in two sentences why a town's <em>median</em> wage tells a job-seeker more than its <em>mean</em> wage. Then find one real statistic in today's news and run it through the four master questions.</div>
+<div class="try"><strong>Try</strong><br><ol>
+<li>Explain in two sentences why a town's <em>median</em> wage tells a job-seeker more than its <em>mean</em> wage. Then find one real statistic in today's news and run it through the four master questions.</li>
+<li>A study finds coffee drinkers live longer. Name the third variable you'd check first — and design the one-sentence study that would actually test causation.</li>
+<li>Write a two-sentence survivorship-bias headline ("Dropouts found more startups!") and then the correction that includes the missing.</li>
+<li>Redo the base-rate arithmetic with a 95% accurate test and a condition affecting 1 in 1,000. In a million people: how many true vs. false positives?</li>
+</ol></div>
 <div class="check"><strong>Check</strong><br>A headline: "Crime up 40% since the new mayor took office." What do you ask first?<br><button>Show answer</button><div class="answer">40% of what? — the base rate. A rise from 5 to 7 incidents is "up 40%" and means almost nothing; from 500 to 700 means a great deal. Then: over what window, compared to the longer trend, and is timing being confused with causation?</div></div>
+<div class="check"><strong>Check</strong><br>A test is 95% accurate for a condition affecting 1 in 1,000. You test positive. How worried should you be?<br><button>Show answer</button><div class="answer">Barely. In 1,000,000 people: 1,000 are sick → 950 true positives; 999,000 are healthy → 49,950 false positives. Your chance of actually being sick is 950 ÷ 50,900 ≈ 1.9%. A good test on a rare condition is still mostly false alarms.</div></div>
+<div class="check"><strong>Check</strong><br>A fund company advertises "our flagship fund beat the market 10 years running." What's the survivorship question?<br><button>Show answer</button><div class="answer">How many funds did they launch, and what happened to the losers? Companies quietly close underperforming funds, so the survivors look brilliant by selection. You need the graveyard, not just the trophy case.</div></div>
+<h4>Summary</h4>
+<p>Statistics lie by omission: the wrong average (mean dragged by outliers), the missing base rate (rare conditions make good tests mostly false alarms), the hidden third variable (correlation isn't cause), the invisible dead (survivorship bias), and the flattering start date. Run every number through the four master questions — compared to what, measured how, over which period, who benefits — and most manipulation fails at least one.</p>
 <label class="markdone"><input type="checkbox" data-lesson="arithmetic:5"> Mark lesson complete</label>
 </div></div>
 
 <div class="lesson capstone" data-course="arithmetic"><div class="lesson-head"><div class="lesson-num">★</div><h3>Capstone: Fermi problems and a stats teardown</h3><div class="lesson-toggle">▾</div></div>
 <div class="lesson-body">
+<h4>Objectives</h4>
+<ul>
+<li>Run a full Fermi chain from anchors alone, with no calculator and no data.</li>
+<li>Teardown a real numbered headline: find the base, the average, the window, and the fair restatement.</li>
+<li>State precisely what's true versus what's merely implied — accuracy is not honesty.</li>
+</ul>
+<h4>The Fermi kit, one last pass</h4>
 <p>Two tasks. No calculator for the first.</p>
 <ol>
 <li><strong>Three Fermi problems</strong> (estimate each, showing your piece-by-piece reasoning): how many gallons of paint to cover every house on your street? How many words have you spoken in your life? How many delivery drivers are working in your county right now?</li>
 <li><strong>A stats teardown:</strong> take one real headline containing a number or percentage and write a half-page analysis — what the number actually says, which average it uses, what the base rate is, what window was chosen, and what a fairer presentation would look like.</li>
 </ol>
+<p>The method, distilled: chain four to six links you can bracket, multiply, and land within a factor of two. Watch it on one of your three problems — words spoken in a life. People speak around 150 words a minute; a chatty hour is ~9,000 words. Say you average an hour and a half of real talking a day: ~13,500 words, round to 15,000 (measured studies land near 16,000, so this is honest). 15,000 × 365 × 40 years = <strong>219,000,000 — about 200 million words</strong>. Every link is arguable and the answer is still right, because the links' errors partly cancel and the order of magnitude is what matters. For the drivers: county population → households → fraction ordering delivery weekly → orders per driver per week. Any sane chain scores — show your work, bracket your shakiest link.</p>
+<h4>The teardown checklist</h4>
+<p>Run your headline through this, in order: <strong>1. The claim:</strong> what does the number literally say? <strong>2. The base:</strong> percent of <em>what</em> — absolute count? <strong>3. The average:</strong> mean or median, and which would be honest here? <strong>4. The window:</strong> why these dates — drag the start backward and see if the story survives. <strong>5. The base rate:</strong> how rare is the underlying condition? <strong>6. Correlation vs. cause:</strong> name the third variable. <strong>7. The survivors:</strong> who's missing from the dataset? <strong>8. The fair restatement:</strong> write the honest version in one or two sentences.</p>
+<p>A worked miniature: <em>"Coffee doubles productivity, study finds."</em> Literally true: forty office workers, self-reported "focused minutes," coffee group averaged twice the control's — one afternoon, no blinding, no controls for sleep or workload. Base: self-reports from 40 people. Window: a single afternoon. Fair restatement: "Forty people who drank coffee <em>said</em> they felt more focused that afternoon." Notice the headline wasn't false — it was dishonest. That distinction is the whole capstone: <strong>a number can be accurate and still be a lie.</strong></p>
 <p>The goal: walk away permanently suspicious of any number that arrives without its context — and permanently able to supply the context yourself.</p>
+<div class="try"><strong>Try</strong><br><ol>
+<li>Warm-up Fermi: how many pizzas did your town eat last year? Show the full chain — population, households, pizzas per household per month.</li>
+<li>Teardown this headline: "Chocolate makes you smarter — Nobel laureates come from the countries that eat the most chocolate." Name the flaw and the third variable.</li>
+<li>Take the real headline from your stats teardown and write its fair restatement in one sentence. Then write the version a manipulative outlet would run — and note exactly which checklist step it exploits.</li>
+</ol></div>
+<div class="check"><strong>Check</strong><br>What's the difference between a Fermi estimate and a guess?<br><button>Show answer</button><div class="answer">Structure. A guess is one number you can't inspect; a Fermi chain is checkable pieces, so you — or anyone else — can find the weak link, bracket it, and improve it. A guess defends itself; a chain invites audit.</div></div>
+<div class="check"><strong>Check</strong><br>Your teardown shows the headline's number is technically true. Can you still call the headline misleading?<br><button>Show answer</button><div class="answer">Yes — misleading is about the implication, not the digit. Say exactly what the number establishes and what it merely suggests; "coffee doubles productivity" was true of self-reports and implied a universal fact. Accuracy of the number, dishonesty of the framing.</div></div>
+<div class="check"><strong>Check</strong><br>Your Fermi chain gives a range of 3,000–30,000. Is that useless?<br><button>Show answer</button><div class="answer">No — it rules out 300 and 300,000, and that ruling-out is usually the entire decision. Most real choices (staff it? stock it? fund it?) only need the right order of magnitude, not the right digits.</div></div>
+<h4>Summary</h4>
+<p>Arithmetic ends where it began: with judgment. The Fermi chain turns ignorance into a bracketed answer; the teardown checklist turns a headline into its honest restatement. Carry both permanently — estimate before you believe, interrogate before you repeat — and no number will ever again arrive in your head without its papers.</p>
 <label class="markdone"><input type="checkbox" data-lesson="arithmetic:6"> Mark lesson complete</label>
 </div></div>
 

@@ -95,7 +95,8 @@ function renderDashCounts(){
 try{
   var fn=location.pathname.split("/").pop()||"index.html";
   var dir=location.pathname.indexOf("/courses/")>-1?"courses/":"";
-  if(fn) save("new-academy-last-v1",{url:fn,dir:dir,title:document.title});
+  /* don't save on the homepage itself, or the button would vanish */
+  if(fn&&fn!=="index.html") save("new-academy-last-v1",{url:fn,dir:dir,title:document.title});
 }catch(e){}
 function renderContinue(){
   var btn=document.getElementById("continue-btn"); if(!btn) return;

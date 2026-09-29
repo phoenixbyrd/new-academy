@@ -18,34 +18,128 @@
 
 <div class="lesson" data-course="logic"><div class="lesson-head"><div class="lesson-num">1</div><h3>Arguments: premises, conclusions, and the two questions</h3><div class="lesson-toggle">▾</div></div>
 <div class="lesson-body">
+<h4>Objectives</h4>
+<ul>
+<li>Split any passage into its premises and its conclusion.</li>
+<li>Ask the two questions — validity, then soundness — in that order, every time.</li>
+<li>Recognize the indicator words that mark premises and conclusions, and the cases where they mislead.</li>
+</ul>
+
+<h4>An argument is not a fight</h4>
 <p>An argument is a set of statements where some (premises) are offered as support for another (the conclusion). Two questions, in order:</p>
 <ol>
 <li><strong>Is it valid?</strong> — <em>If</em> the premises were true, would the conclusion have to be true? Validity is about structure, not reality.</li>
 <li><strong>Is it sound?</strong> — Is it valid <em>and</em> are the premises actually true?</li>
 </ol>
-<p>A valid argument can have a false conclusion (bad premises). An invalid argument can have a true conclusion (lucky guess). Only soundness gives you knowledge.</p>
-<div class="try"><strong>Try</strong><br>Find an argument in an opinion article. Write out its premises numbered, then its conclusion. Ask the two questions separately — most articles fail at question 2, not question 1.</div>
+<p>Writers rarely label their premises. Watch for indicator words. Premise indicators: <em>since, because, for, given that, seeing that, on the grounds that.</em> Conclusion indicators: <em>therefore, thus, hence, so, it follows that, consequently, which proves that.</em> No indicator is foolproof — "because" often marks a causal explanation rather than an argument ("the streets are wet <em>because</em> it rained" explains a fact nobody disputes; nothing is being argued). The test is always: is one statement being <em>offered as a reason to believe</em> another?</p>
+<p>Many real arguments arrive as enthymemes — arguments with a suppressed premise the speaker assumes you'll supply. "Studies show the policy failed, so the policy failed" hides a premise: <em>the cited studies are trustworthy and representative.</em> Exposing the hidden premise is half of critical thinking; question 2 usually fails on the premise nobody said out loud.</p>
+
+<h4>The two questions, worked</h4>
+<p>Validity is a hypothetical: <em>suppose</em> the premises were true — would the conclusion be forced? Take this:</p>
+<blockquote>All mammals can fly.<br>Whales are mammals.<br>Therefore whales can fly.</blockquote>
+<p>That argument is <strong>valid and unsound</strong>: the structure is airtight, but the first premise is false. Now the reverse:</p>
+<blockquote>Most drivers are licensed.<br>James is a driver.<br>Therefore James is licensed.</blockquote>
+<p><strong>Invalid</strong> — "most" leaves room for exceptions, so true premises wouldn't guarantee the conclusion — even if James happens to be licensed. A valid argument can have a false conclusion (bad premises). An invalid argument can have a true conclusion (lucky guess). Only soundness gives you knowledge.</p>
+<p>Order matters. People usually start with "is that true?" — question 2 — and argue about facts forever. Check structure first. If the form is broken, the facts don't matter; if the form is fine, you now know exactly which premises need evidence. That discipline alone defuses most internet arguments.</p>
+<p>Aristotle, who invented this machinery, put it this way:</p>
+<blockquote><em>"A syllogism is discourse in which, certain things being stated, something other than what is stated follows of necessity from their being so."</em> — Aristotle, <em>Prior Analytics</em> I.2</blockquote>
+
+<h4>Diagramming a real passage</h4>
+<p>Take an opinion sentence: <em>"We should require licenses for e-bikes, because they're getting faster every year and riders keep ending up in the ER."</em> Reconstruct it:</p>
+<blockquote>1. E-bikes are getting faster every year.<br>2. E-bike riders keep ending up in the ER.<br>[hidden] 3. Things that keep getting faster and putting people in the ER should be licensed.<br>C. E-bikes should be licensed.</blockquote>
+<p>Now the two questions bite. Validity: <em>if</em> 1–3 were true, the conclusion would follow — arguably valid. Soundness: premise 2 needs numbers (how many riders? per mile?), and hidden premise 3 is doing all the moral work unexamined. You now know precisely where to push back instead of vibes-based arguing.</p>
+
+<div class="try"><strong>Try</strong><br><ol>
+<li>Find an argument in an opinion article. Write out its premises numbered, then its conclusion. Ask the two questions separately — most articles fail at question 2, not question 1.</li>
+<li>Rewrite the article's argument as an enthymeme hunt: what premises is the writer <em>not</em> stating? List at least two suppressed premises and decide whether you'd grant them.</li>
+<li>Take any "because" sentence from today's news and decide: is it an argument (offering a reason to believe) or an explanation (giving the cause of something undisputed)?</li>
+</ol></div>
+
 <div class="check"><strong>Check</strong><br>"All cats are mammals. Whiskers is a cat. Therefore Whiskers is a mammal." Valid? Sound?<br><button>Show answer</button><div class="answer">Valid — the structure guarantees the conclusion if the premises hold. Sound — the premises are in fact true. (Soundness is always hostage to the real world.)</div></div>
+<div class="check"><strong>Check</strong><br>"All dogs are reptiles. Fido is a dog. Therefore Fido is a reptile." Valid? Sound?<br><button>Show answer</button><div class="answer">Valid, but unsound: the structure forces the conclusion <em>if</em> the premises were true, and the first premise is false. Validity doesn't care that the world disagrees — that's question 2's job.</div></div>
+<div class="check"><strong>Check</strong><br>A pundit says: "The new law is unconstitutional because it violates the Constitution." Which question does this fail, and why?<br><button>Show answer</button><div class="answer">It fails before question 2 even gets started — the premise <em>is</em> the conclusion in different words, so there's no argument to evaluate. This is begging the question (see Lesson 4): no evidence is actually offered. Reconstruction reveals it instantly.</div></div>
+
+<h4>Summary</h4>
+<p>Every argument is premises plus a conclusion, and it faces two questions in strict order: validity (does the structure force the conclusion?) then soundness (are the premises actually true?). Indicator words help you find the parts; hunting suppressed premises helps you find where soundness usually dies.</p>
 <label class="markdone"><input type="checkbox" data-lesson="logic:1"> Mark lesson complete</label>
 </div></div>
 
 <div class="lesson" data-course="logic"><div class="lesson-head"><div class="lesson-num">2</div><h3>The syllogism and its traps</h3><div class="lesson-toggle">▾</div></div>
 <div class="lesson-body">
+<h4>Objectives</h4>
+<ul>
+<li>Build categorical syllogisms from three terms and spot the four figures.</li>
+<li>Name and use the four classic valid moods: Barbara, Celarent, Darii, Ferio.</li>
+<li>Diagnose the classic traps: undistributed middle, illicit major and minor.</li>
+<li>Distinguish the valid conditional forms (modus ponens, modus tollens) from the formal fallacies (affirming the consequent, denying the antecedent).</li>
+</ul>
+
+<h4>The three-term machine</h4>
 <p>Aristotle's syllogism is the atom of deductive reasoning:</p>
 <blockquote>All humans are mortal.<br>Socrates is human.<br>Therefore Socrates is mortal.</blockquote>
-<p>Two classic traps to memorize:</p>
+<p>Every categorical syllogism uses exactly three terms: the <strong>major term</strong> (the predicate of the conclusion — here <em>mortal</em>), the <strong>minor term</strong> (the subject of the conclusion — <em>Socrates</em>), and the <strong>middle term</strong> (the one that appears in both premises and vanishes from the conclusion — <em>human</em>). The middle term is the bridge: it links the other two, then drops out.</p>
+<p>The middle term can sit in four positions, giving the <strong>four figures</strong>:</p>
+<table>
+<tr><th>Figure</th><th>Major premise</th><th>Minor premise</th></tr>
+<tr><td>1</td><td>Middle–Predicate</td><td>Subject–Middle</td></tr>
+<tr><td>2</td><td>Predicate–Middle</td><td>Subject–Middle</td></tr>
+<tr><td>3</td><td>Middle–Predicate</td><td>Middle–Subject</td></tr>
+<tr><td>4</td><td>Predicate–Middle</td><td>Middle–Subject</td></tr>
+</table>
+<p>Figure 1 is the natural one — the middle term sits between the extremes — and it's the only figure Aristotle considered self-evidently valid.</p>
+
+<h4>The four moods worth memorizing</h4>
+<p>Logicians name valid premise-combinations by quantifier (A = all, E = no, I = some, O = some…not). The four perfect moods of Figure 1:</p>
+<table>
+<tr><th>Mood</th><th>Form</th><th>Example</th></tr>
+<tr><td><strong>Barbara</strong> (AAA-1)</td><td>All M are P. All S are M. ∴ All S are P.</td><td>All mammals are warm-blooded. All whales are mammals. ∴ All whales are warm-blooded.</td></tr>
+<tr><td><strong>Celarent</strong> (EAE-1)</td><td>No M are P. All S are M. ∴ No S are P.</td><td>No reptiles have fur. All snakes are reptiles. ∴ No snakes have fur.</td></tr>
+<tr><td><strong>Darii</strong> (AII-1)</td><td>All M are P. Some S are M. ∴ Some S are P.</td><td>All mechanics understand engines. Some drivers are mechanics. ∴ Some drivers understand engines.</td></tr>
+<tr><td><strong>Ferio</strong> (EIO-1)</td><td>No M are P. Some S are M. ∴ Some S are not P.</td><td>No birds are mammals. Some pets are birds. ∴ Some pets are not mammals.</td></tr>
+</table>
+<p>Notice the discipline: the conclusion never claims more than the premises warrant. "Some S are M" yields only "some" in the conclusion (Darii, Ferio) — smuggling an "all" into the conclusion is the single most common structural error in public reasoning.</p>
+
+<h4>The classic traps</h4>
+<p><strong>Undistributed middle:</strong> the middle term must cover its <em>whole</em> class in at least one premise, or it fails to connect the extremes. "All poets are dreamers. Some politicians are dreamers. Therefore some politicians are poets." The middle term <em>dreamers</em> is the predicate of two A/I statements — never distributed, never pinned down — so the two groups might be entirely different dreamers.</p>
+<p><strong>Illicit major / illicit minor:</strong> a term distributed in the conclusion must be distributed in the premises. "All cars have engines. No boats are cars. Therefore no boats have engines." <em>Engines</em> (the major term) is distributed in the conclusion ("no boats have engines" says something about <em>all</em> engines) but undistributed in the premise ("all cars have engines" says nothing about every engine). The conclusion overreaches its evidence — a structural version of hasty generalization.</p>
+<p>Aristotle's own statement of the master principle behind Figure 1:</p>
+<blockquote><em>"Whenever three terms are so related to one another that the last is contained in the middle as in a whole, and the middle is contained in or excluded from the first as in a whole, the extremes must be related by a perfect syllogism."</em> — Aristotle, <em>Prior Analytics</em> I.4</blockquote>
+
+<h4>Conditional syllogisms: the everyday kind</h4>
+<p>Most real-world arguments are conditionals ("if P then Q"), not categoricals. Two classic traps to memorize:</p>
 <ul>
 <li><strong>Affirming the consequent:</strong> "If it rains, the ground is wet. The ground is wet. Therefore it rained." Invalid — sprinklers exist.</li>
 <li><strong>Denying the antecedent:</strong> "If it rains, the ground is wet. It didn't rain. Therefore the ground isn't wet." Invalid — same reason.</li>
 <li><strong>Valid forms:</strong> <em>modus ponens</em> (if P then Q; P; therefore Q) and <em>modus tollens</em> (if P then Q; not Q; therefore not P).</li>
 </ul>
-<div class="try"><strong>Try</strong><br>Formalize this: "If the policy worked, prices would fall. Prices didn't fall. So the policy didn't work." Which valid form is it?</div>
+<p>These four are <strong>formal</strong> fallacies — the error is in the shape, detectable without knowing anything about rain. Memorize the two invalid shapes and you can reject them on sight, in any subject matter.</p>
+<p>Practical habit: when a hot take hits you, ask "modus ponens or affirming the consequent?" — recognizing the shape tells you the argument proves nothing before you check a single statistic.</p>
+
+<div class="try"><strong>Try</strong><br><ol>
+<li>Formalize this: "If the policy worked, prices would fall. Prices didn't fall. So the policy didn't work." Which valid form is it?</li>
+<li>Build one example each of Barbara and Ferio about something in your daily life (gig work, cooking, transit). Check that the conclusion claims no more than the premises allow.</li>
+<li>Find an argument online that affirms the consequent. Rewrite it in valid form (modus tollens) — what premise would the writer need to add to make it work?</li>
+</ol></div>
+
 <div class="check"><strong>Check</strong><br>"If he's guilty he'll flee. He fled. So he's guilty." What's wrong?<br><button>Show answer</button><div class="answer">Affirming the consequent — an invalid form. Innocent people flee too (fear, panic, bad advice). The conclusion might be true, but the argument doesn't establish it.</div></div>
+<div class="check"><strong>Check</strong><br>"All birds can fly. Penguins are birds. Therefore penguins can fly." Valid or invalid?<br><button>Show answer</button><div class="answer">Valid — it's Barbara, a perfect Figure 1 syllogism. The problem is soundness: the first premise is false. Don't confuse a false premise with a broken structure; the machine is fine, the input is wrong.</div></div>
+<div class="check"><strong>Check</strong><br>"All poets are dreamers. Some politicians are dreamers. Therefore some politicians are poets." Name the trap.<br><button>Show answer</button><div class="answer">Undistributed middle. <em>Dreamers</em> is never distributed in either premise, so the two groups (poets, politicians) may be entirely different sets of dreamers. The bridge doesn't connect.</div></div>
+
+<h4>Summary</h4>
+<p>The syllogism is three terms and two premises, and its valid shapes — Barbara, Celarent, Darii, Ferio, modus ponens, modus tollens — are the gold standard of deductive structure. The traps are structural, not factual: undistributed middles, illicit distribution, and the two invalid conditional forms will sink an argument regardless of how true its claims are.</p>
 <label class="markdone"><input type="checkbox" data-lesson="logic:2"> Mark lesson complete</label>
 </div></div>
 
 <div class="lesson" data-course="logic"><div class="lesson-head"><div class="lesson-num">3</div><h3>Fallacies I: attacks on the arguer</h3><div class="lesson-toggle">▾</div></div>
 <div class="lesson-body">
+<h4>Objectives</h4>
+<ul>
+<li>Name the five arguer-attack fallacies and tell them apart on sight.</li>
+<li>Apply the key nuance: an insult is not an <em>ad hominem</em> unless the attack substitutes for engaging the argument.</li>
+<li>Judge when character and authority are genuinely relevant to a claim.</li>
+</ul>
+
+<h4>The family pattern</h4>
 <p>Informal fallacies are bad moves that <em>look</em> persuasive. First family: instead of engaging the argument, attack something near it.</p>
 <ul>
 <li><strong>Ad hominem:</strong> "You can't trust his tax plan — he's a convicted fraudster." Maybe true of him; irrelevant to whether the plan works.</li>
@@ -54,13 +148,44 @@
 <li><strong>Tu quoque ("you too"):</strong> "You criticize pollution but you drive a car." Hypocrisy doesn't refute a claim.</li>
 <li><strong>Genetic fallacy:</strong> judging a claim by its origin — "that idea came from <em>them</em>, so it's wrong."</li>
 </ul>
-<div class="try"><strong>Try</strong><br>Watch ten minutes of any televised debate or argument show. Tally each fallacy from this lesson. You'll rarely get past three minutes without one.</div>
+<p>The unifying test: <em>does the move engage the premises or the conclusion, or does it change the subject to the person, the source, or a weaker version of the claim?</em> If the argument itself goes untouched, you've found the family.</p>
+
+<h4>Ad hominem is not "any insult"</h4>
+<p>This is the most misused label in public debate, so get it exactly right. Calling someone an idiot is just an insult. It becomes <strong>ad hominem</strong> only when the attack <em>substitutes for engaging the argument</em>: "He's an idiot, <em>so</em> his budget math must be wrong." The fallacy is in the <em>so</em> — the inference from character to conclusion.</p>
+<p>Two refinements. First, <strong>circumstantial ad hominem</strong>: "Of course she supports the subsidy — her company gets it." A conflict of interest is a legitimate reason to <em>double-check the evidence</em>, never a refutation. The claim stands or falls on its own merits; the motive only tells you where to look harder. Second, character is sometimes genuinely relevant: a witness's credibility, a source's track record of lying, an expert's actual qualifications. Attacking <em>testimony</em> is not attacking <em>argument</em> — "don't believe his alibi, he's lied under oath before" challenges the evidence itself, which is fair game.</p>
+
+<h4>The rest of the family, sharpened</h4>
+<p><strong>Strawman</strong> thrives on paraphrase. The defense is steelmanning: restate the opponent's position in its <em>strongest</em> form and defeat <em>that</em>. A tell: the strawmanner never quotes — they summarize, and the summary always has sharper edges than the original. When you catch yourself thinking "I can't believe they actually believe that," check the original wording first.</p>
+<p><strong>Illegitimate authority</strong> has three legitimate conditions it violates: the authority must be (1) an expert <em>in the relevant field</em>, (2) reflecting <em>genuine consensus</em> rather than a cherry-picked outlier, and (3) speaking <em>within their competence</em>. A celebrity doctor on economics fails condition 1; "studies show" with no citation fails all three. But note the flip side: genuine expert consensus in the relevant field is not a fallacy at all — it's how non-experts rationally navigate complex domains.</p>
+<p><strong>Tu quoque</strong> and the <strong>genetic fallacy</strong> are both origin stories masquerading as refutations. "You drive a car" says nothing about whether pollution is harmful; "the idea came from <em>them</em>" says nothing about whether it's true. True ideas can come from hypocrites and enemies. The cure is a one-sentence redirect: <em>"Suppose a saint said it — would the argument be any different?"</em></p>
+<p>Aristotle catalogued these trick-moves over two thousand years ago in his handbook of bad argument:</p>
+<blockquote><em>"For just as in other spheres the difference between the genuine and the merely apparent is most evident in the case of beauty and in the case of art, so it is in the case of argument."</em> — Aristotle, <em>On Sophistical Refutations</em></blockquote>
+
+<div class="try"><strong>Try</strong><br><ol>
+<li>Watch ten minutes of any televised debate or argument show. Tally each fallacy from this lesson. You'll rarely get past three minutes without one.</li>
+<li>Find one real comment thread where someone cries "ad hominem!" Check: was the attack actually <em>substituted for</em> engaging the argument, or was it just an insult alongside a real rebuttal? Most "ad hominem" callouts fail this test.</li>
+<li>Steelman practice: take a position you disagree with, state it in its strongest form in two sentences, and only then write your objection. Notice how much harder the objection gets.</li>
+</ol></div>
+
 <div class="check"><strong>Check</strong><br>Is "experts agree" ever a legitimate appeal to authority?<br><button>Show answer</button><div class="answer">Yes — when the experts are in the relevant field, there's genuine consensus, and the claim is within their competence. The fallacy is citing authority as a <em>substitute</em> for evidence, or citing the wrong authority.</div></div>
+<div class="check"><strong>Check</strong><br>"Don't listen to his climate argument — he's funded by oil companies." Fallacy or fair point?<br><button>Show answer</button><div class="answer">Circumstantial ad hominem. The funding is a legitimate reason to scrutinize his evidence more carefully, but it doesn't refute the argument. If his data is wrong, show the data is wrong — the paycheck alone proves nothing about the claim.</div></div>
+<div class="check"><strong>Check</strong><br>In a debate, one speaker calls the other "a clown" and then spends five minutes dismantling the opponent's statistics with better data. Is the "clown" remark an ad hominem fallacy?<br><button>Show answer</button><div class="answer">No. It's an insult, not a fallacy — the speaker <em>did</em> engage the argument with counter-evidence. Ad hominem requires the attack to <em>substitute for</em> engagement. Rude, but logically clean.</div></div>
+
+<h4>Summary</h4>
+<p>Arguer-attack fallacies change the subject from the argument to the person, the source, or a weakened restatement of the claim. The master nuance: an insult is only ad hominem when it does the work the argument was supposed to do — and character, motive, and credentials are fair game when they bear on testimony or evidence rather than substituting for it.</p>
 <label class="markdone"><input type="checkbox" data-lesson="logic:3"> Mark lesson complete</label>
 </div></div>
 
 <div class="lesson" data-course="logic"><div class="lesson-head"><div class="lesson-num">4</div><h3>Fallacies II: tricks with the evidence</h3><div class="lesson-toggle">▾</div></div>
 <div class="lesson-body">
+<h4>Objectives</h4>
+<ul>
+<li>Name the six evidence-trick fallacies and the test that kills each one.</li>
+<li>Apply base-rate and confound checks to any statistical claim.</li>
+<li>Use the falsifiability question — "what would prove this wrong?" — as a universal screen.</li>
+</ul>
+
+<h4>The family pattern</h4>
 <p>Second family: the argument <em>looks</em> evidence-based, but the evidence doesn't do the claimed work.</p>
 <ul>
 <li><strong>Cherry-picking:</strong> citing only the data that fits. The antidote: ask what the <em>full</em> dataset shows.</li>
@@ -70,26 +195,97 @@
 <li><strong>Hasty generalization:</strong> three anecdotes treated as a trend.</li>
 <li><strong>Begging the question:</strong> the conclusion smuggled into a premise — "We must censor misinformation because false claims are dangerous and must be censored."</li>
 </ul>
-<div class="try"><strong>Try</strong><br>Take a viral claim from social media and run it through this list. Write down which fallacy it commits — or, if it's clean, what evidence would be needed to support it.</div>
+<p>Each fallacy has a killing question:</p>
+<table>
+<tr><th>Fallacy</th><th>The test that kills it</th></tr>
+<tr><td>Cherry-picking</td><td>"What does the <em>full</em> dataset show — and who chose this window?"</td></tr>
+<tr><td>False dilemma</td><td>"Name a third option."</td></tr>
+<tr><td>Slippery slope</td><td>"Show me the evidence for <em>each</em> link in the chain."</td></tr>
+<tr><td>Post hoc</td><td>"What else changed at the same time?"</td></tr>
+<tr><td>Hasty generalization</td><td>"What's the sample size — and how was it selected?"</td></tr>
+<tr><td>Begging the question</td><td>"Restate the premise without the conclusion in it."</td></tr>
+</table>
+
+<h4>Numbers that lie without lying</h4>
+<p>The subtlest tricks are statistically true and logically false. Take "crime up 40% since the new mayor took office." The 40% may be computed correctly — and the <em>implication</em> (the mayor caused it) still unsupported. Run the full screen: <strong>post hoc</strong> (timing ≠ causation — what else changed?), <strong>cherry-picking</strong> (why this window? show the ten-year trend), <strong>base rates</strong> (40% of what? a rise from 10 to 14 incidents is "40%" but means something very different from 1,000 to 1,400), and <strong>confounds</strong> (was crime already rising before the mayor arrived?). A number can be accurate while the argument built on it is garbage.</p>
+<p><strong>Hasty generalization</strong> deserves special attention because anecdote is the native language of social media. "My uncle smoked and lived to 90" is one data point from a self-selected sample (the uncle who survived to tell about it). Ask two questions: <em>n = ?</em> and <em>how were the cases selected?</em> Three dramatic anecdotes with a selection bias beat a thousand quiet counterexamples in persuasion — and lose to them in truth.</p>
+<p><strong>Begging the question</strong> is the quietest of the six because it <em>feels</em> like reasoning. Watch for the conclusion hiding inside a premise, usually as an unargued adjective: "misinformation" (assumes the claims are false), "corrupt deal" (assumes the corruption), "common-sense reform" (assumes the sense is common and correct). Aristotle's definition still stands:</p>
+<blockquote><em>"Begging or assuming the point at issue consists, to take the most general view, in failing to demonstrate the required proposition."</em> — Aristotle, <em>Prior Analytics</em> II.16</blockquote>
+
+<h4>The falsifiability screen</h4>
+<p>One question screens for half the family at once: <strong>"What evidence would prove this claim wrong?"</strong> A slippery slope with no falsifiable links, a cherry-picked trend that ignores contrary data, a post hoc story that explains every outcome — all of them dodge this question. Genuine evidence-based claims can name their own defeat conditions: "if the ten-year data shows no trend, my claim fails." If the claimant can't tell you what would change their mind, they're not doing evidence; they're doing decoration.</p>
+
+<div class="try"><strong>Try</strong><br><ol>
+<li>Take a viral claim from social media and run it through this list. Write down which fallacy it commits — or, if it's clean, what evidence would be needed to support it.</li>
+<li>Find a "X up Y% since Z" headline. Look up the base rate and the longer trend. Write the honest version of the headline in one sentence.</li>
+<li>Pick a belief you hold strongly. Write down what evidence would prove it wrong. If you can't, you've found a belief running on decoration, not evidence.</li>
+</ol></div>
+
 <div class="check"><strong>Check</strong><br>A headline: "Crime up 40% since the new mayor took office." What logical checks apply before believing the implied claim?<br><button>Show answer</button><div class="answer">Post hoc (timing ≠ causation), cherry-picking (why this window? what about longer trends?), base rates (40% of what?), and confounding causes (was crime already rising?). The number may be accurate and the implication still false.</div></div>
+<div class="check"><strong>Check</strong><br>"If we let students retake exams, grade inflation will follow, then degrees become worthless, then employers stop trusting universities." What's wrong, and what's the killing question?<br><button>Show answer</button><div class="answer">Slippery slope: a chain of predictions with no evidence for the links. The killing question is "show me the evidence for <em>each</em> link" — the first step might be plausible while the leap to institutional collapse is pure speculation.</div></div>
+<div class="check"><strong>Check</strong><br>"We know the policy is just because a just government would enact it." Name the fallacy and restate the argument with the trick removed.<br><button>Show answer</button><div class="answer">Begging the question — the premise ("a just government would enact it") assumes the conclusion (the policy is just). With the trick removed, there's no argument left: "The policy is just because… " and nothing follows. That's the tell.</div></div>
+
+<h4>Summary</h4>
+<p>Evidence-trick fallacies let true-looking data do false work: cherry-picked windows, false either-ors, unevidenced causal chains, sequence mistaken for cause, anecdotes mistaken for data, and conclusions smuggled into premises. Each dies to a specific question — and all of them fear the falsifiability screen: <em>what would prove this wrong?</em></p>
 <label class="markdone"><input type="checkbox" data-lesson="logic:4"> Mark lesson complete</label>
 </div></div>
 
 <div class="lesson" data-course="logic"><div class="lesson-head"><div class="lesson-num">5</div><h3>Beyond deduction: induction and abduction</h3><div class="lesson-toggle">▾</div></div>
 <div class="lesson-body">
+<h4>Objectives</h4>
+<ul>
+<li>Distinguish deduction, induction, and abduction by what each one claims.</li>
+<li>Judge inductive strength from sample size, variety, and method.</li>
+<li>Run inference to the best explanation with explicit rival hypotheses.</li>
+</ul>
+
+<h4>Induction: from cases to rules</h4>
 <p>Most real reasoning isn't deductive. Two other modes run daily life:</p>
 <ul>
 <li><strong>Induction:</strong> from observed cases to general rules. "Every swan I've seen is white → all swans are white." Powerful, never certain — one black swan breaks it. Strength depends on sample size, variety, and method.</li>
 <li><strong>Abduction:</strong> inference to the best explanation. "The lawn is wet, the sky is clear, the sprinkler is running → the sprinkler did it." This is how diagnosis, detective work, and science mostly operate.</li>
 </ul>
+<p>Induction is <em>ampliative</em>: the conclusion says more than the premises contained, which is why it can be wrong. Its strength is a function of three things. <strong>Size:</strong> 3,000 surveyed voters beat 30. <strong>Variety:</strong> swans observed on three continents beat 10,000 swans from one lake. <strong>Method:</strong> a random sample beats a self-selected one — an online poll of angry commenters tells you about angry commenters, not the public. Hume's old problem still stands: no finite set of observations <em>logically</em> guarantees the next case, which is why induction yields probabilities and working rules, never certainty.</p>
+<table>
+<tr><th></th><th>Deduction</th><th>Induction</th><th>Abduction</th></tr>
+<tr><td>Moves</td><td>General → particular</td><td>Particular → general</td><td>Observations → best explanation</td></tr>
+<tr><td>Conclusion is…</td><td>Guaranteed (if valid)</td><td>Probable</td><td>Plausible, revisable</td></tr>
+<tr><td>Fails when…</td><td>Form breaks / premise false</td><td>Sample biased or thin</td><td>A better explanation exists</td></tr>
+<tr><td>Example</td><td>All men are mortal…</td><td>Every Ford I owned died young…</td><td>Wet lawn, clear sky, sprinkler on…</td></tr>
+</table>
+
+<h4>Abduction: inference to the best explanation</h4>
+<p>Abduction starts from a surprising observation and asks: <em>what hypothesis would make this observation unsurprising?</em> A doctor sees a cluster of symptoms and infers the disease that best explains them; a detective sees the broken window and the muddy boots and infers the break-in story that fits. Science runs on it: the hypothesis isn't deduced from data, it's <em>abducted</em> as the best account of the data, then tested.</p>
+<p>"Best" is doing heavy lifting, so make it explicit. A good abductive inference wins on: <strong>coverage</strong> (it explains <em>all</em> the evidence, not just the convenient half), <strong>simplicity</strong> (fewer invented entities — don't posit a conspiracy when a clerical error fits), <strong>track record</strong> (explanations of this type have worked before), and <strong>revisability</strong> (it names what new evidence would overturn it). The discipline is listing <em>rival</em> explanations before committing. The lawn is wet: sprinkler, yes — but also the neighbor's hose, a burst pipe, or morning dew you didn't notice. Abduction without rivals is just a hunch with confidence.</p>
 <p>The Stoic connection: Epictetus's discipline of assent is abduction applied to your own mind — "what's the best explanation of this impression, and what are the rival explanations?"</p>
-<div class="try"><strong>Try</strong><br>Take something you believe about a person in your life ("they're angry at me"). List three rival explanations for the same evidence. Notice how the first explanation felt certain before the rivals existed.</div>
+<p>Aristotle himself gave induction its founding charter — it's how we climb from what we perceive to the principles we reason from:</p>
+<blockquote><em>"So it is plain that we must get to know the first principles by induction; for the method by which even sense-perception implants the universal is inductive."</em> — Aristotle, <em>Posterior Analytics</em> II.19</blockquote>
+
+<div class="try"><strong>Try</strong><br><ol>
+<li>Take something you believe about a person in your life ("they're angry at me"). List three rival explanations for the same evidence. Notice how the first explanation felt certain before the rivals existed.</li>
+<li>Find a news story that generalizes from a poll or study. Evaluate it on size, variety, and method — then write the strongest honest version of its claim in one sentence.</li>
+<li>Diagnose something small today (a dead phone battery, a late bus) by abduction: list the observation, propose three explanations, and pick the winner on coverage and simplicity. Say what evidence would overturn your pick.</li>
+</ol></div>
+
 <div class="check"><strong>Check</strong><br>Why is "inference to the best explanation" not the same as guessing?<br><button>Show answer</button><div class="answer">Because it's constrained: the explanation must account for <em>all</em> the evidence, survive rival explanations, and remain revisable when new evidence arrives. Guessing skips all three constraints.</div></div>
+<div class="check"><strong>Check</strong><br>"Every car from this brand I've owned broke down, so the brand is unreliable." You owned two, bought the same year from the same lot. Assess the induction.<br><button>Show answer</button><div class="answer">Weak induction. Size is tiny (n=2) and variety is zero — same model year, same lot, possibly the same defect batch. The conclusion overreaches: what you've really learned is something about <em>that lot's</em> cars, not the brand.</div></div>
+<div class="check"><strong>Check</strong><br>"The street is wet. Either it rained overnight or the hydrant burst. No rain was reported anywhere nearby." Which mode of reasoning is the conclusion ("probably the hydrant")?<br><button>Show answer</button><div class="answer">Abduction — inference to the best explanation. It isn't deduced (the premises don't guarantee it) and it isn't induction from repeated cases; it's the hypothesis that best covers the observations, held revisably until new evidence arrives.</div></div>
+
+<h4>Summary</h4>
+<p>Deduction guarantees; induction generalizes from cases with strength set by size, variety, and method; abduction infers the best explanation, disciplined by coverage, simplicity, and explicit rivals. Nearly all real-world reasoning is the second or third kind — which is why the logic of evidence matters more in daily life than the logic of proof.</p>
 <label class="markdone"><input type="checkbox" data-lesson="logic:5"> Mark lesson complete</label>
 </div></div>
 
 <div class="lesson capstone" data-course="logic"><div class="lesson-head"><div class="lesson-num">★</div><h3>Capstone: the fact-checker's teardown</h3><div class="lesson-toggle">▾</div></div>
 <div class="lesson-body">
+<h4>Objectives</h4>
+<ul>
+<li>Execute a complete five-step teardown of any contested claim.</li>
+<li>Reconstruct arguments charitably before judging them — no strawmanning your target.</li>
+<li>Deliver a verdict calibrated to what the evidence actually supports, using the "accurate means true as stated" standard.</li>
+</ul>
+
+<h4>The five moves</h4>
 <p>Pick one opinion piece or viral video making a contested claim. Produce a one-page teardown:</p>
 <ol>
 <li>State the conclusion in one sentence (in your own words — no strawmanning).</li>
@@ -98,7 +294,29 @@
 <li>List every fallacy committed, with quotes.</li>
 <li>Verdict: what, if anything, does the evidence actually support?</li>
 </ol>
+<p>Step 1 is where most teardowns die. If you can't state the other side's conclusion fairly — in words they'd accept — you're not fact-checking, you're shadowboxing. Steelman first (Lesson 3); only then apply the knives. Step 2 is the labor: every premise gets a status, and "unverified" is a real verdict, not a shrug — it means the argument is incomplete <em>even if</em> the structure is perfect. Step 3 names the machinery: is this a deduction to test for validity, an induction to test for sample quality, or an abduction to test against rivals?</p>
+
+<h4>A worked teardown</h4>
+<p>Claim (viral post): <em>"The city banned plastic bags and litter dropped 60% in a year — proof bans work."</em></p>
+<blockquote>1. Conclusion: plastic-bag bans reduce litter. (Fair restatement: the poster would accept this.)<br>2. Premises: (a) the city banned bags — <strong>verified</strong>; (b) litter dropped 60% in a year — <strong>unverified</strong> (single unsourced figure; what counts as "litter"? measured how?); (c, hidden) nothing else relevant changed — <strong>unverified</strong>.<br>3. Form: inductive/causal from one case — invalid as stated; one city's one year proves nothing general.<br>4. Fallacies: <strong>post hoc</strong> (sequence ≠ causation — maybe a cleanup program launched the same year); <strong>cherry-picking</strong> (why this city, this year?); <strong>hasty generalization</strong> (n=1 city).<br>5. Verdict: the ban <em>may</em> have helped, but the evidence as presented supports nothing beyond "one unsourced number moved after one policy." The accurate claim would be: "the city reports less litter after the ban" — and even that needs the source.</blockquote>
+<p>Notice what the teardown <em>doesn't</em> do: it doesn't declare the ban useless. The verdict is calibrated — it says exactly what the evidence supports and no more. Overclaiming in the "debunk" direction is the same sin as overclaiming in the original.</p>
+
+<h4>The verdict standard</h4>
 <p>The standard: <strong>accurate means the claim is true as stated</strong> — not merely that someone said it. "X said Y" verifies only that the claim was made.</p>
+<p>This is the load-bearing rule. "Officials say the program is working" verifies that officials <em>said</em> it — the program's performance is a separate claim needing separate evidence. Headlines launder the first into the second constantly: "Study finds coffee cures X" usually means <em>one small study found a correlation</em>, which is a different and much weaker claim. Your verdict should always be phrased against the <em>strongest literal reading</em> of the claim — if "crime is out of control" means "crime is at historic highs," check historic highs; if the data shows a 5% uptick from a record low, the claim is false <em>as stated</em>, even though something real (the 5%) sits underneath it. Say both: what's false, and what's true.</p>
+
+<div class="try"><strong>Try</strong><br><ol>
+<li>Run the full five-step teardown on a real opinion piece or viral video. One page, quotes for every fallacy, verdict calibrated to the evidence.</li>
+<li>Take the worked teardown above and play defense: write the strongest reply the original poster could make, then show whether it survives steps 2–4. (Hint: it needs a sourced 60% and a control comparison.)</li>
+<li>Swap teardowns with someone — or revisit your own after 24 hours — and check step 1: did you steelman the conclusion, or did a strawman sneak in? Revise until the other side would accept your restatement.</li>
+</ol></div>
+
+<div class="check"><strong>Check</strong><br>A post claims: "The senator admitted the policy failed." You find the full video — she said no such thing. But she <em>did</em> say the rollout "faced challenges." Verdict?<br><button>Show answer</button><div class="answer">False as stated. "Admitted the policy failed" ≠ "faced challenges" — the quote doesn't support the claim. What's true: she acknowledged difficulties. The verdict names both: the claim fails, and the weaker true thing underneath it.</div></div>
+<div class="check"><strong>Check</strong><br>Teardown drill: "Unemployment fell after the tax cut, so the tax cut created the jobs." Name the form and the fallacy, and state what evidence would actually be needed.<br><button>Show answer</button><div class="answer">Form: causal induction from sequence — one case, no comparison. Fallacy: post hoc (plus cherry-picking the window). Needed: a control or comparison (similar economies without the cut), the longer trend, and confounds ruled out (was unemployment already falling?). Timing alone proves nothing.</div></div>
+<div class="check"><strong>Check</strong><br>Why does the teardown require naming the argument's form (step 3) instead of jumping straight to fact-checking the premises?<br><button>Show answer</button><div class="answer">Because the form tells you <em>what kind</em> of checking applies. A deduction needs a validity test; an induction needs sample-size and method scrutiny; an abduction needs rival explanations. Fact-checking premises without knowing the form is like proofreading a contract's spelling while ignoring that it's the wrong contract.</div></div>
+
+<h4>Summary</h4>
+<p>The teardown is the whole course in one page: reconstruct the argument charitably, grade every premise, name the form and judge it, quote every fallacy, and deliver a verdict calibrated to what the evidence supports — under the rule that accurate means true as stated, not merely said.</p>
 <label class="markdone"><input type="checkbox" data-lesson="logic:6"> Mark lesson complete</label>
 </div></div>
 
