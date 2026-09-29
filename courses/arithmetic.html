@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arithmetic — The New Academy</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav class="topnav"><div class="inner">
+  <a class="brand" href="../index.html"><span>◈</span> The New Academy</a>
+  <div class="navlinks"><a href="rhetoric.html">← Rhetoric</a><a href="geometry.html">Next: Geometry →</a></div>
+</div></nav>
+<div class="wrap">
+<p class="eyebrow">Quadrivium I</p>
+<h1>Arithmetic</h1>
+<p class="subtitle">The art of number. Not long division — number <em>sense</em>: knowing roughly how big things are, doing math in your head, and refusing to be fooled by figures.</p>
+
+<div class="lesson" data-course="arithmetic"><div class="lesson-head"><div class="lesson-num">1</div><h3>How big is that, really?</h3><div class="lesson-toggle">▾</div></div>
+<div class="lesson-body">
+<p>The most useful arithmetic skill is not calculation — it is <strong>estimation</strong>. The physicist Enrico Fermi used to ask his students questions like "how many piano tuners are in Chicago?" and get answers within a factor of two, with no data at all. The method: break the unknown into pieces you <em>can</em> guess, multiply, and don't sweat precision. These are called <strong>Fermi problems</strong>, and they are how engineers, investors, and generals sanity-check claims before the spreadsheets arrive.</p>
+<p>Think in <strong>orders of magnitude</strong> — powers of ten. A thousand and a million are not "both big"; a million seconds is 11 days, a billion seconds is 32 years. Most people who are fooled by numbers are fooled because they never converted to a scale their brain can feel. The ancient habit: <em>count what can be counted, and distrust what arrives pre-counted by someone selling something.</em></p>
+<div class="try"><strong>Try</strong><br>Estimate how many gallons of gasoline your town burns per day. Start from pieces: population → households with cars → miles per car per day → gallons per mile. Compare your answer to a friend's estimate — you'll likely land within a factor of two of each other, which is the whole point.</div>
+<div class="check"><strong>Check</strong><br>Why is an estimate that's "within a factor of two" still useful?<br><button>Show answer</button><div class="answer">Because most bad decisions come from being wrong by a factor of a hundred or a thousand, not a factor of two. An estimate puts you in the right neighborhood — close enough to spot nonsense and plan sensibly.</div></div>
+<label class="markdone"><input type="checkbox" data-lesson="arithmetic:1"> Mark lesson complete</label>
+</div></div>
+
+<div class="lesson" data-course="arithmetic"><div class="lesson-head"><div class="lesson-num">2</div><h3>Ratios, proportions, percentages</h3><div class="lesson-toggle">▾</div></div>
+<div class="lesson-body">
+<p>Percentages are the native language of modern deception, and the defense is one question: <strong>percent of <em>what</em>?</strong> "Prices rose 50%!" — of what base? "Risk doubled!" — from 1 in a million to 2 in a million? A percentage without its base is a story without a setting.</p>
+<p>Two everyday tools. <strong>Unit pricing:</strong> always divide price by quantity — the "big deal" package is often the expensive one. <strong>Successive changes multiply, they don't add:</strong> a 50% discount followed by a 50% markup does not return you to the start. Start at $100 → 50% off → $50 → 50% more → $75. The order doesn't matter; multiplication is multiplication. Merchants have exploited this asymmetry for centuries.</p>
+<div class="try"><strong>Try</strong><br>Something costs $80. It's marked 50% off, then the store adds 50% back "for restocking." What's the final price — and how much did the store just make on the round trip? Prove it with the multiplication, not the intuition.</div>
+<div class="check"><strong>Check</strong><br>A headline says "unemployment fell 20%." What do you need to know before reacting?<br><button>Show answer</button><div class="answer">The base: 20% of what rate? Falling from 10% to 8% is 20% — but so is falling from 5% to 4%, a very different story. You also need the absolute change and the timeframe.</div></div>
+<label class="markdone"><input type="checkbox" data-lesson="arithmetic:2"> Mark lesson complete</label>
+</div></div>
+
+<div class="lesson" data-course="arithmetic"><div class="lesson-head"><div class="lesson-num">3</div><h3>Mental math that actually works</h3><div class="lesson-toggle">▾</div></div>
+<div class="lesson-body">
+<p>The Greeks did serious mathematics without a single written numeral for zero — mental manipulation was the whole game. Three tricks cover 90% of daily life. <strong>Split numbers:</strong> 8 × 47 = (8 × 40) + (8 × 7) = 320 + 56 = 376. <strong>Round and adjust:</strong> 47.60 × 0.15 for a tip? Think 10% ($4.76) + half of that for 5% ($2.38) = $7.14. <strong>The 10% trick:</strong> move the decimal one place — 10% of anything is instant, and 5%, 15%, 20% are all built from it.</p>
+<p>The deeper point isn't speed; it's <strong>independence</strong>. Every number you can check in your head is a number nobody can lie to you about — at the register, in a contract, on a pay stub. The calculator is a tool; the estimate in your head is the audit.</p>
+<div class="try"><strong>Try</strong><br>All mental, no paper: a 15% tip on $47.60; 8 × 47; 20% off $65; and 7 × 13 × 2. Say each answer out loud before checking with a calculator. Speed comes later — accuracy first.</div>
+<div class="check"><strong>Check</strong><br>Why compute 8 × 47 as (8 × 40) + (8 × 7) instead of grinding through it?<br><button>Show answer</button><div class="answer">Because working memory holds about 4 chunks, not long digit strings. Splitting turns one hard problem into two easy ones (40s and 7s) plus one addition — each small enough to hold in your head without dropping anything.</div></div>
+<label class="markdone"><input type="checkbox" data-lesson="arithmetic:3"> Mark lesson complete</label>
+</div></div>
+
+<div class="lesson" data-course="arithmetic"><div class="lesson-head"><div class="lesson-num">4</div><h3>Proof: why the primes never end</h3><div class="lesson-toggle">▾</div></div>
+<div class="lesson-body">
+<p>A <strong>proof</strong> is an argument that settles a question <em>forever</em> — not by evidence or authority, but by pure reasoning. Around 300 BC, Euclid proved there are infinitely many prime numbers, and his proof still works today, unchanged, because it doesn't depend on any fact about the world. Here it is, step by step:</p>
+<ol>
+<li>Suppose, for contradiction, that there are only finitely many primes. List them all: p₁, p₂, …, pₙ.</li>
+<li>Multiply them all together and add 1: call it N = (p₁ × p₂ × … × pₙ) + 1.</li>
+<li>N is not divisible by any prime on your list — each one leaves a remainder of 1.</li>
+<li>But every whole number greater than 1 has <em>some</em> prime divisor. So N has a prime divisor not on the list. Contradiction.</li>
+<li>Therefore the list can never be complete. The primes never end.</li>
+</ol>
+<p>Notice the move: <strong>assume the opposite, build something from that assumption, and watch it explode.</strong> That move — proof by contradiction — powers half of mathematics and a good share of philosophy.</p>
+<div class="try"><strong>Try</strong><br>Prove that the sum of two odd numbers is even. (Hint: write an odd number as 2k+1 for some whole number k, then add two of them and look at the form of the result.)</div>
+<div class="check"><strong>Check</strong><br>What makes a proof different from a very convincing argument?<br><button>Show answer</button><div class="answer">A proof leaves no loophole <em>in principle</em> — its conclusion follows necessarily from its premises, so no future evidence can overturn it. A convincing argument (even a scientific one) is always hostage to new data.</div></div>
+<label class="markdone"><input type="checkbox" data-lesson="arithmetic:4"> Mark lesson complete</label>
+</div></div>
+
+<div class="lesson" data-course="arithmetic"><div class="lesson-head"><div class="lesson-num">5</div><h3>Statistics literacy</h3><div class="lesson-toggle">▾</div></div>
+<div class="lesson-body">
+<p>The ancients distrusted rhetoric; the modern equivalent is distrusting <strong>statistics presented without context</strong>. Three defenses cover most cases. <strong>Mean vs. median:</strong> the mean is dragged by outliers — a town where nine people earn $30k and one earns $3M has a <em>mean</em> income of $327k and a <em>median</em> of $30k. Whenever someone quotes an average about money, ask which average. <strong>Base rates:</strong> "the test is 99% accurate" means little without the base rate of the condition — a rare disease makes most positives false positives. <strong>Cherry-picked windows:</strong> any trend can be manufactured by choosing the start date.</p>
+<p>The master question for any statistic: <em>compared to what, measured how, over which period, and who benefits from me believing it?</em> Four questions, and most statistical manipulation fails at least one.</p>
+<div class="try"><strong>Try</strong><br>Explain in two sentences why a town's <em>median</em> wage tells a job-seeker more than its <em>mean</em> wage. Then find one real statistic in today's news and run it through the four master questions.</div>
+<div class="check"><strong>Check</strong><br>A headline: "Crime up 40% since the new mayor took office." What do you ask first?<br><button>Show answer</button><div class="answer">40% of what? — the base rate. A rise from 5 to 7 incidents is "up 40%" and means almost nothing; from 500 to 700 means a great deal. Then: over what window, compared to the longer trend, and is timing being confused with causation?</div></div>
+<label class="markdone"><input type="checkbox" data-lesson="arithmetic:5"> Mark lesson complete</label>
+</div></div>
+
+<div class="lesson capstone" data-course="arithmetic"><div class="lesson-head"><div class="lesson-num">★</div><h3>Capstone: Fermi problems and a stats teardown</h3><div class="lesson-toggle">▾</div></div>
+<div class="lesson-body">
+<p>Two tasks. No calculator for the first.</p>
+<ol>
+<li><strong>Three Fermi problems</strong> (estimate each, showing your piece-by-piece reasoning): how many gallons of paint to cover every house on your street? How many words have you spoken in your life? How many delivery drivers are working in your county right now?</li>
+<li><strong>A stats teardown:</strong> take one real headline containing a number or percentage and write a half-page analysis — what the number actually says, which average it uses, what the base rate is, what window was chosen, and what a fairer presentation would look like.</li>
+</ol>
+<p>The goal: walk away permanently suspicious of any number that arrives without its context — and permanently able to supply the context yourself.</p>
+<label class="markdone"><input type="checkbox" data-lesson="arithmetic:6"> Mark lesson complete</label>
+</div></div>
+
+<nav class="pager"><a href="rhetoric.html">← Rhetoric</a><a href="geometry.html">Next: Geometry →</a></nav>
+<footer class="foot"><p>The New Academy · Arithmetic</p></footer>
+</div>
+<script src="../js/app.js"></script>
+</body>
+</html>

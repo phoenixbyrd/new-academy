@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Geometry — The New Academy</title>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<nav class="topnav"><div class="inner">
+  <a class="brand" href="../index.html"><span>◈</span> The New Academy</a>
+  <div class="navlinks"><a href="arithmetic.html">← Arithmetic</a><a href="music.html">Next: Music →</a></div>
+</div></nav>
+<div class="wrap">
+<p class="eyebrow">Quadrivium II</p>
+<h1>Geometry</h1>
+<p class="subtitle">The art of proof and space. Euclid's <em>Elements</em> was the most-used textbook in history — two thousand years of students learned to think by proving things about triangles.</p>
+
+<div class="lesson" data-course="geometry"><div class="lesson-head"><div class="lesson-num">1</div><h3>Euclid's game</h3><div class="lesson-toggle">▾</div></div>
+<div class="lesson-body">
+<p>Euclid's genius wasn't discovering geometry — much of it was already known. It was <strong>organizing</strong> it: start from a handful of agreed starting points, and derive <em>everything else</em> by pure logic. The starting points are the five <strong>postulates</strong>:</p>
+<ol>
+<li>A straight line can be drawn between any two points.</li>
+<li>A line segment can be extended indefinitely.</li>
+<li>A circle can be drawn with any center and radius.</li>
+<li>All right angles are equal.</li>
+<li>The parallel postulate: through a point not on a line, exactly one line can be drawn parallel to it.</li>
+</ol>
+<p>The first four feel obvious. The fifth doesn't — and that itch mattered: two thousand years of trying to prove the fifth postulate from the others eventually produced <strong>non-Euclidean geometry</strong>, which turned out to describe curved spacetime. The lesson: in any argument, notice which premises are load-bearing and which are merely assumed. Disputes are usually about the fifth postulate — the assumption nobody examined.</p>
+<div class="try"><strong>Try</strong><br>Read the five postulates aloud. Which feels least obvious? (It's the fifth — the parallel one.) Now ask: what "fifth postulate" am I assuming in an argument I'm currently having — the premise I haven't examined?</div>
+<div class="check"><strong>Check</strong><br>Why did Euclid bother writing down postulates for things everyone already believed?<br><button>Show answer</button><div class="answer">Because making assumptions explicit is what makes reasoning checkable. If the foundations are on the table, anyone can verify every step — and anyone can later question the foundations themselves, which is exactly what happened with the parallel postulate.</div></div>
+<label class="markdone"><input type="checkbox" data-lesson="geometry:1"> Mark lesson complete</label>
+</div></div>
+
+<div class="lesson" data-course="geometry"><div class="lesson-head"><div class="lesson-num">2</div><h3>Triangles and Pythagoras</h3><div class="lesson-toggle">▾</div></div>
+<div class="lesson-body">
+<p>The triangle is geometry's atom: any polygon can be cut into triangles, so triangle facts become <em>all</em> shape facts. The king of them: <strong>a² + b² = c²</strong> for a right triangle — the square on the hypotenuse equals the sum of the squares on the other two sides. The Babylonians knew it a thousand years before Pythagoras; the Greeks <em>proved</em> it.</p>
+<p>A proof you can see: draw a square of side (a+b). Inside it, place four copies of the right triangle, one in each corner, tilted inward. They enclose a tilted inner square of side c. The big square's area is (a+b)²; it's also 4 triangles (4 × ab/2 = 2ab) plus c². So (a+b)² = 2ab + c² → a² + 2ab + b² = 2ab + c² → <strong>a² + b² = c²</strong>. No algebra required to <em>see</em> it.</p>
+<div class="try"><strong>Try</strong><br>The 3-4-5 trick: tie knots in a rope at 3, 4, and 5 unit intervals, pull it into a triangle, and you get a perfect right angle — Egyptian surveyors and modern carpenters both use it. Test it on any corner in your home.</div>
+<div class="check"><strong>Check</strong><br>Why is the visual proof above a proof, not just a picture?<br><button>Show answer</button><div class="answer">Because it works for <em>any</em> a and b — the algebra shows the relationship holds regardless of the triangle's size. A single measured example would be evidence; the general argument is proof.</div></div>
+<label class="markdone"><input type="checkbox" data-lesson="geometry:2"> Mark lesson complete</label>
+</div></div>
+
+<div class="lesson" data-course="geometry"><div class="lesson-head"><div class="lesson-num">3</div><h3>Circles and pi</h3><div class="lesson-toggle">▾</div></div>
+<div class="lesson-body">
+<p>Measure any circle — a coin, a wheel, a plate — and divide its circumference by its diameter. You always get the same number: <strong>π ≈ 3.14159…</strong> That constancy is a genuine wonder: every circle in the universe obeys the same ratio. Archimedes pinned it down by <strong>squeezing</strong> the circle between inscribed and circumscribed polygons — more sides, tighter squeeze — bounding π between 3.1408 and 3.1429 over two thousand years ago, by hand.</p>
+<p>π is <strong>irrational</strong> (its decimals never repeat) and <strong>transcendental</strong> (it can't be the solution to any finite polynomial equation) — proven, not guessed. The practical formulas: circumference = 2πr, area = πr². And the area formula has a beautiful intuition: slice a circle into many thin wedges and rearrange them into a near-rectangle of height r and width half the circumference (πr) — area = r × πr = πr².</p>
+<div class="try"><strong>Try</strong><br>Measure any round object: wrap a string around it (circumference), measure across it (diameter), divide. You'll get ~3.14 every time. Do three objects and feel the constancy.</div>
+<div class="check"><strong>Check</strong><br>What was Archimedes' key idea for bounding π?<br><button>Show answer</button><div class="answer">Squeeze the circle between two polygons — one inside, one outside. As the number of sides grows, both polygons' perimeters close in on the circumference, trapping π in an ever-narrower interval.</div></div>
+<label class="markdone"><input type="checkbox" data-lesson="geometry:3"> Mark lesson complete</label>
+</div></div>
+
+<div class="lesson" data-course="geometry"><div class="lesson-head"><div class="lesson-num">4</div><h3>Area, volume, and the tyranny of scale</h3><div class="lesson-toggle">▾</div></div>
+<div class="lesson-body">
+<p>Formulas are easier to keep if you <strong>build</strong> them: a rectangle's area (length × width) cut diagonally gives two triangles — so triangle area is half the rectangle's. A circle rearranged into wedges gives πr² (last lesson). Stack flat shapes and you get volume: prism volume = base area × height. A sphere's volume (⁴⁄₃πr³) and surface area (4πr²) were Archimedes' proudest results — he had them carved on his tomb.</p>
+<p>The crucial modern idea is <strong>scaling</strong>: double a shape's edge and its area quadruples (2²) while its volume <em>octuples</em> (2³). This is why ants can't be human-sized (their legs, scaled up, couldn't carry their cubed weight), why large animals need disproportionately thick bones, and why a 16-inch pizza is <em>four times</em> the 8-inch — not twice. The pizza fact alone will save you money for life.</p>
+<div class="try"><strong>Try</strong><br>Answer from scaling, not formulas: why does doubling a cube's edge multiply its volume by 8? (Hint: how many original cubes fit along each edge of the doubled cube?) Then verify the pizza claim with πr².</div>
+<div class="check"><strong>Check</strong><br>A model is built at 1:10 scale. How much paint (area) and how much material (volume) does it need relative to the real thing?<br><button>Show answer</button><div class="answer">Paint: (1/10)² = 1/100 of the area. Material: (1/10)³ = 1/1000 of the volume. Scale the linear dimension and the rest follows by powers — this is why models are cheap and prototypes deceive.</div></div>
+<label class="markdone"><input type="checkbox" data-lesson="geometry:4"> Mark lesson complete</label>
+</div></div>
+
+<div class="lesson" data-course="geometry"><div class="lesson-head"><div class="lesson-num">5</div><h3>Similarity and scale: measuring the unreachable</h3><div class="lesson-toggle">▾</div></div>
+<div class="lesson-body">
+<p>Legend says Thales measured the Great Pyramid's height by waiting until his own shadow equaled his height — at that moment, the pyramid's shadow equaled the pyramid's height. The principle is <strong>similarity</strong>: same shape, different size, and all corresponding lengths in the same ratio. If a 6-foot person casts a 4-foot shadow while a tree casts a 40-foot shadow, the tree is 60 feet tall — no climbing required.</p>
+<p>Similarity is the quiet engine of maps, models, photography, and perspective drawing — every map is a similarity transformation of the land, and every scale on it is a ratio you can compute with. The Greeks used it for surveying, astronomy, and architecture; you use it every time you read "1 inch = 1 mile."</p>
+<div class="try"><strong>Try</strong><br>Measure your own height and your shadow's length at the same moment you measure a tree's or building's shadow. Compute the height from the ratio. Check against a known height if you can — you'll be within a few percent.</div>
+<div class="check"><strong>Check</strong><br>Why do similar triangles guarantee the shadow method works?<br><button>Show answer</button><div class="answer">Because the sun's rays hit the ground at the same angle everywhere nearby, the triangle formed by you and your shadow has the same angles as the triangle formed by the tree and its shadow. Same angles → same shape → all lengths in the same ratio.</div></div>
+<label class="markdone"><input type="checkbox" data-lesson="geometry:5"> Mark lesson complete</label>
+</div></div>
+
+<div class="lesson capstone" data-course="geometry"><div class="lesson-head"><div class="lesson-num">★</div><h3>Capstone: Eratosthenes-style measurement</h3><div class="lesson-toggle">▾</div></div>
+<div class="lesson-body">
+<p>Around 240 BC, Eratosthenes measured the Earth's circumference with a stick, a well, and geometry: at noon on the summer solstice the sun shone straight down a well in Syene, while in Alexandria a stick cast a shadow at 7.2° — one-fiftieth of a circle. So Alexandria was one-fiftieth of the Earth's circumference from Syene. He was within a few percent.</p>
+<p><strong>Your version, two tasks:</strong></p>
+<ol>
+<li><strong>Measure something big with something small:</strong> use the shadow method (lesson 5) to measure the tallest thing near you, and document your method, numbers, and estimated error.</li>
+<li><strong>Draw your own proof of Pythagoras:</strong> on paper, reproduce the tilted-square proof from lesson 2 from memory, labeling every step. If you can reconstruct it without looking, you don't just know the theorem — you own it.</li>
+</ol>
+<label class="markdone"><input type="checkbox" data-lesson="geometry:6"> Mark lesson complete</label>
+</div></div>
+
+<nav class="pager"><a href="arithmetic.html">← Arithmetic</a><a href="music.html">Next: Music →</a></nav>
+<footer class="foot"><p>The New Academy · Geometry</p></footer>
+</div>
+<script src="../js/app.js"></script>
+</body>
+</html>
